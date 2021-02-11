@@ -1,0 +1,26 @@
+/* Fonts */
+$title-font: "Lemon Milk", sans-serif;
+$body-font: "Champagne & Limousines", sans-serif;
+
+/* Colors */
+$charcoal: #3b3b54;
+$blue: #b6d0e2;
+$white: #f2f8f8;
+
+/* Media Queries */
+$on-palm: 600px;
+$on-laptop: 800px;
+
+@mixin mq($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+/* Use like so:
+ *
+ * @include mq($on-palm | $on-device) {
+ *   css styles...
+ * }
+ *
+ */
