@@ -18,19 +18,20 @@ body {
 }
 
 main {
-  flex-grow: 1;
+  flex: 1 0 calc(100% - 80px);
+  padding: 1rem;
 }
 
 h1 {
   font-family: $title-font;
   font-weight: 500;
+  color: $charcoal;
 }
 
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2 {
   font-family: $title-font;
   font-weight: 300;
+  color: $charcoal;
+}
+
 }
