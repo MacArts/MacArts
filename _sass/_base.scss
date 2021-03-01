@@ -34,4 +34,42 @@ h2 {
   color: $charcoal;
 }
 
+
+$border-size: 1rem;
+.framed {
+  $shadow-size: 15px;
+  border: $border-size solid $charcoal;
+  box-shadow: -$shadow-size $shadow-size $blue;
+  margin-left: $shadow-size;
+  margin-bottom: $shadow-size;
+}
+
+.content {
+  width: min(85%, 1100px);
+  margin: 0 auto;
+  margin-bottom: 2rem;
+
+  .title {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    h1 {
+      font-size: 4rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    @include mq($on-palm) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+  }
 }
