@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<div class="content">
+  <div class="title">
+    <h1>Gallery</h1>
+    <h2>{{ page.name }}</h2>
+  </div>
+  <div class="grid" id="gallery">
+    {%- assign gallery_media = site.static_files | where: "tag", page.tag -%}
+    {%- for img in gallery_media -%}
+      <img src="{{ img.path }}" alt="" class="framed">
+    {%- endfor -%}
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
+<script>
+  const gallery = Macy({
+    container: '#gallery',
+    margin: 24,
+    columns: 3,
+    breakAt: {
+      1000: 2,
+      800: 1
+    }
+  });
+  
+  window.onresize = () => {
+    gallery.reInit();
+  }
+</script>

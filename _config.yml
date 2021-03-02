@@ -19,3 +19,30 @@ nav_links:
   About: /about/
   Gallery: /gallery/
   Departments: /departments/
+
+collections:
+  galleries:
+    output: true
+    permalink: /gallery/:name/
+
+defaults:
+  - scope:
+      path: "assets/img/dance"
+    values:
+      tag: "dance"
+  - scope:
+      path: "assets/img/drama"
+    values:
+      tag: "drama"
+  - scope:
+      path: "assets/img/music"
+    values:
+      tag: "music"
+  - scope:
+      path: "assets/img/visualarts"
+    values:
+      tag: "visual"
+  - scope:
+      path: "_galleries"
+    values:
+      layout: "gallery"
