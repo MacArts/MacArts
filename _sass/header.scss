@@ -43,6 +43,32 @@
 
     .nav-item {
       height: 100%;
+      position: relative;
+
+      .nav-list {
+        position: absolute;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+        background-color: $charcoal;
+
+        .nav-item {
+          width: 100%;
+          padding: 0.25rem;
+        }
+      }
+
+      &:hover {
+        background-color: darken($charcoal, 5%);
+
+        .nav-list {
+          width: auto;
+          height: auto;
+        }
+      }
     }
 
     .nav-link {
@@ -55,6 +81,7 @@
       font-size: 1.25em;
       color: $white;
       text-decoration: none;
+      cursor: pointer;
     }
   }
 

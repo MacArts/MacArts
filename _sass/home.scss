@@ -58,7 +58,8 @@
     }
   }
 
-  #drama {
+  #drama a {
+    height: 100%;
     display: flex;
     flex-flow: column-reverse;
   }

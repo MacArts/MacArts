@@ -18,7 +18,11 @@ nav_links:
   Blog: /blog/
   About: /about/
   Gallery: /gallery/
-  Departments: /departments/
+  Departments:
+    Visual & Digital Arts: /departments/visual-arts/
+    Dance: /departments/dance/
+    Drama: /departments/drama/
+    Music: /departments/music/
 
 collections:
   galleries:
