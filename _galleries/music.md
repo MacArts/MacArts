@@ -1,4 +1,4 @@
 ---
-name: music
+subtitle: Music
 tag: music
 ---

@@ -1,4 +1,4 @@
 ---
-name: visual arts
+subtitle: Visual Arts
 tag: visual
 ---

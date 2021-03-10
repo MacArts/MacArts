@@ -1,4 +1,4 @@
 ---
-name: dance
+subtitle: Dance
 tag: dance
 ---

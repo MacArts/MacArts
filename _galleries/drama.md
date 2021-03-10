@@ -1,4 +1,4 @@
 ---
-name: drama
+subtitle: Drama
 tag: drama
 ---
