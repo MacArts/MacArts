@@ -2,17 +2,17 @@
 layout: info
 permalink: /gallery/
 title: Gallery
-subtitle: Showcase
+subheading: Showcase
 ---
 
 <div class="listing">
   {%- for discipline in site.galleries -%}
     <div>
       <div class="img-wrapper">
-        <img src="https://loremflickr.com/320/240/trumpet?a={{ discipline.subtitle }}" alt="" class="framed">
+        <img src="https://loremflickr.com/320/240/trumpet?a={{ discipline.subheading }}" alt="" class="framed">
       </div>
       <div class="info">
-        <h2>{{ discipline.subtitle }}</h2>
+        <h2>{{ discipline.subheading }}</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         <a href="{{ discipline.url | relative_url }}" class="button-large">View Gallery</a>
       </div>

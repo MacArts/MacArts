@@ -50,4 +50,4 @@ defaults:
       path: "_galleries"
     values:
       layout: "gallery-display"
-      title: "Gallery"
+      heading: "Gallery"
