@@ -1,25 +1,21 @@
 ---
-layout: default
+layout: info
 permalink: /gallery/
+title: Gallery
+subheading: Showcase
 ---
 
-<div class="content">
-	<div class="title">
-		<h1>Gallery</h1>
-		<h2>Showcase</h2>
-	</div>
-	<div class="listing">
-		{%- for discipline in site.galleries -%}
-			<div>
-				<div class="img-wrapper">
-					<img src="https://loremflickr.com/320/240/trumpet?a={{ discipline.name }}" alt="" class="framed">
-				</div>
-				<div class="info">
-					<h2>{{ discipline.name }}</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-					<a href="{{ discipline.url | relative_url }}" class="button-large">View Gallery</a>
-				</div>
-			</div>
-		{%- endfor -%}
-	</div>
+<div class="listing">
+  {%- for discipline in site.galleries -%}
+    <div>
+      <div class="img-wrapper">
+        <img src="https://loremflickr.com/320/240/trumpet?a={{ discipline.subheading }}" alt="" class="framed">
+      </div>
+      <div class="info">
+        <h2>{{ discipline.subheading }}</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <a href="{{ discipline.url | relative_url }}" class="button-large">View Gallery</a>
+      </div>
+    </div>
+  {%- endfor -%}
 </div>

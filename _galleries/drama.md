@@ -1,4 +1,5 @@
 ---
-name: drama
+title: Drama Gallery
+subheading: Drama
 tag: drama
 ---
