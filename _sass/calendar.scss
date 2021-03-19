@@ -1,0 +1,38 @@
+.calendar-wrapper {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+section.filter {
+  padding: 1rem 2rem;
+
+  h2 {
+    display: inline-block;
+  }
+
+  .filter-toggles {
+    display: inline-flex;
+
+    .filter-toggle {
+      padding: 0 0.5rem;
+      cursor: pointer;
+
+      &:not(:last-child) {
+        border-right: 1px solid $charcoal;
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .filter-list {
+    list-style: none;
+
+    .filter-item > * {
+      cursor: pointer;
+      user-select: none;
+    }
+  }
+}

@@ -28,6 +28,9 @@ collections:
   galleries:
     output: true
     permalink: /gallery/:name/
+  event_pages:
+    output: true
+    permalink: /events/:name/
 
 defaults:
   - scope:
@@ -51,3 +54,7 @@ defaults:
     values:
       layout: "gallery-display"
       heading: "Gallery"
+  - scope:
+      path: "_event_pages"
+    values:
+      heading: "Events"
