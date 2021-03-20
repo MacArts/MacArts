@@ -9,7 +9,10 @@ subheading: Showcase
   {%- for discipline in site.galleries -%}
     <div>
       <div class="img-wrapper">
-        <img src="https://loremflickr.com/320/240/trumpet?a={{ discipline.subheading }}" alt="" class="framed">
+        {%- capture thumbnail -%}
+          {{ discipline.thumbnail | default: "logo-black.svg" }}
+        {%- endcapture -%}
+        <img src="{{ 'assets/img/' | append: thumbnail | relative_url }}" alt="" class="framed">
       </div>
       <div class="info">
         <h2>{{ discipline.subheading }}</h2>
