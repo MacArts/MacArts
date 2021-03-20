@@ -8,12 +8,18 @@
     font-weight: 400;
   }
 
+  h3 {
+    font-size: 1.5rem;
+    color: $charcoal;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
   > div {
     display: flex;
     flex-flow: row nowrap;
     width: 100%;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin: 1.25rem;
 
     .info {
       margin-top: max(0, $border-size - 0.6rem);
@@ -23,6 +29,7 @@
       p {
         font-size: 1.25rem;
         margin: 0.75rem 0;
+        letter-spacing: 0.5px;
       }
     }
 
@@ -43,6 +50,7 @@
   @include mq($on-palm) {
     > div {
       flex-flow: column nowrap;
+      align-items: center;
 
       .info {
         text-align: center;
@@ -52,6 +60,30 @@
 
     h2 {
       font-size: 1.5rem;
+    }
+  }
+
+  &.half {
+    flex-flow: row wrap;
+
+    > div {
+      width: calc(50% - 2.5rem);
+
+      .img-wrapper {
+        flex-basis: unset;
+      }
+    }
+
+    @include mq(1250px) {
+      flex-flow: column nowrap;
+
+      > div {
+        width: auto;
+  
+        .img-wrapper {
+          max-width: 200px;
+        }
+      }
     }
   }
 }
