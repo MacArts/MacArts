@@ -5,6 +5,11 @@
 
 section.filter {
   padding: 1rem 2rem;
+  font-size: 1.25em;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
 
   h2 {
     display: inline-block;
@@ -14,11 +19,13 @@ section.filter {
     display: inline-flex;
 
     .filter-toggle {
-      padding: 0 0.5rem;
+      // padding: 0 0.5rem;
       cursor: pointer;
 
       &:not(:last-child) {
         border-right: 1px solid $charcoal;
+        padding-right: 0.5rem;
+        margin-right: 0.5rem;
       }
 
       &:hover {

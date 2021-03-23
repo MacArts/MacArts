@@ -18,7 +18,10 @@
     .info {
       margin-top: max(0, $border-size - 0.6rem);
       margin-left: 1.5rem;
-      height: min-content;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: flex-start;
 
       p {
         font-size: 1.25rem;

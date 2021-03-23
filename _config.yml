@@ -20,8 +20,8 @@ nav_links:
   Gallery: /gallery/
   Departments:
     Music: /departments/music/
-    Dance: /departments/dance/
     Drama: /departments/drama/
+    Dance: /departments/dance/
     Visual & Digital Arts: /departments/visual-arts/
 
 collections:
@@ -37,6 +37,7 @@ collections:
     output: true
     permalink: /events/:name/
     order:
+      - central-arts-council.html
       - music.html
       - drama.html
       - dance.html
