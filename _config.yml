@@ -19,18 +19,28 @@ nav_links:
   About: /about/
   Gallery: /gallery/
   Departments:
-    Visual & Digital Arts: /departments/visual-arts/
+    Music: /departments/music/
     Dance: /departments/dance/
     Drama: /departments/drama/
-    Music: /departments/music/
+    Visual & Digital Arts: /departments/visual-arts/
 
 collections:
   galleries:
     output: true
     permalink: /gallery/:name/
+    order:
+      - music.md
+      - drama.md
+      - dance.md
+      - visual-arts.md
   event_pages:
     output: true
     permalink: /events/:name/
+    order:
+      - music.html
+      - drama.html
+      - dance.html
+      - visual-arts.html
 
 defaults:
   - scope:
