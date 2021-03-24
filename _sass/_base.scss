@@ -52,7 +52,9 @@ $border-size: 1rem;
   .title {
     text-align: center;
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid lighten($charcoal, 60%);
 
     h1 {
       font-size: 4rem;
@@ -60,10 +62,6 @@ $border-size: 1rem;
 
     h2 {
       font-size: 2rem;
-    }
-
-    hr {
-      margin: 1rem 0;
     }
 
     @include mq($on-palm) {
