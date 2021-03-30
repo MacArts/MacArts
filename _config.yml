@@ -19,15 +19,29 @@ nav_links:
   About: /about/
   Gallery: /gallery/
   Departments:
-    Visual & Digital Arts: /departments/visual-arts/
-    Dance: /departments/dance/
-    Drama: /departments/drama/
     Music: /departments/music/
+    Drama: /departments/drama/
+    Dance: /departments/dance/
+    Visual & Digital Arts: /departments/visual-arts/
 
 collections:
   galleries:
     output: true
     permalink: /gallery/:name/
+    order:
+      - music.md
+      - drama.md
+      - dance.md
+      - visual-arts.md
+  event_pages:
+    output: true
+    permalink: /events/:name/
+    order:
+      - central-arts-council.html
+      - music.html
+      - drama.html
+      - dance.html
+      - visual-arts.html
 
 defaults:
   - scope:
@@ -51,3 +65,7 @@ defaults:
     values:
       layout: "gallery-display"
       heading: "Gallery"
+  - scope:
+      path: "_event_pages"
+    values:
+      heading: "Events"

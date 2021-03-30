@@ -18,7 +18,7 @@ body {
 }
 
 main {
-  flex: 1 0 calc(100% - 80px);
+  flex: 1 0 unquote("calc(100% - 80px)");
   padding: 1rem;
 }
 
@@ -45,13 +45,16 @@ $border-size: 1rem;
 }
 
 .content {
-  width: min(85%, 1100px);
+  width: unquote("min(85%, 1100px)");
   margin: 0 auto;
   margin-bottom: 2rem;
 
   .title {
     text-align: center;
-    margin-bottom: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid lighten($charcoal, 60%);
 
     h1 {
       font-size: 4rem;

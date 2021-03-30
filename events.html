@@ -1,0 +1,21 @@
+---
+layout: info
+permalink: /events/
+title: Events
+subheading: 2020 - 2021
+---
+
+<div class="listing">
+  {%- for discipline in site.event_pages -%}
+    <div>
+      <div class="img-wrapper">
+        <img src="https://loremflickr.com/320/240/trumpet?a={{ discipline.subheading }}" alt="" class="framed">
+      </div>
+      <div class="info">
+        <h2>{{ discipline.subheading }}</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <a href="{{ discipline.url | relative_url }}" class="button-large">View Events</a>
+      </div>
+    </div>
+  {%- endfor -%}
+</div>
