@@ -50,7 +50,7 @@ layout: home
 				<div>
 					<h3 class="h2">{{ contact.name }}</h3>
 					<p><i data-feather="mail"></i><a href="mailto:{{ contact.email }}">{{ contact.email }}</a></p>
-					<p><i data-feather="phone"></i>{{ contact.phone }}</p>
+					<p><i data-feather="phone"></i><a href="tel:{{ contact.phone | phone }}">{{ contact.phone }}</a></p>
 					<p><i data-feather="map-pin"></i>Room {{ contact.room }}</p>
 				</div>
 			{%- endfor -%}
