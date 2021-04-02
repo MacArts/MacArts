@@ -57,7 +57,7 @@ defaults:
     values:
       tag: "music"
   - scope:
-      path: "assets/img/visualarts"
+      path: "assets/img/visual-arts"
     values:
       tag: "visual"
   - scope:
