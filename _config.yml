@@ -33,6 +33,9 @@ collections:
       - drama.md
       - dance.md
       - visual-arts.md
+  departments:
+    output: true
+    permalink: /departments/:name/
   event_pages:
     output: true
     permalink: /events/:name/
@@ -44,6 +47,12 @@ collections:
       - visual-arts.html
 
 defaults:
+  - scope:
+      path: "_departments"
+    values:
+      layout: "department"
+      subheading: "Department Page"
+      side-title: "What's New"
   - scope:
       path: "assets/img/dance"
     values:

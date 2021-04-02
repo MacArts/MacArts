@@ -9,12 +9,17 @@ html {
   height: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: $body-font;
   font-weight: 300;
   background-color: $white;
   display: flex;
   flex-flow: column;
+  overflow-x: hidden;
 }
 
 main {
@@ -22,18 +27,23 @@ main {
   padding: 1rem;
 }
 
-h1 {
+
+// .h1, .h2 exist to maintain semantics
+h1, .h1 {
   font-family: $title-font;
   font-weight: 500;
   color: $charcoal;
 }
 
-h2 {
+h2, .h2 {
   font-family: $title-font;
   font-weight: 300;
   color: $charcoal;
 }
 
+a {
+  color: darken($blue, 50%);
+}
 
 $border-size: 1rem;
 .framed {
@@ -44,9 +54,13 @@ $border-size: 1rem;
   margin-bottom: $shadow-size;
 }
 
-.content {
+@mixin content-width {
   width: unquote("min(85%, 1100px)");
   margin: 0 auto;
+}
+
+.content {
+  @include content-width;
   margin-bottom: 2rem;
 
   .title {
@@ -66,7 +80,7 @@ $border-size: 1rem;
 
     @include mq($on-palm) {
       h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
       }
 
       h2 {

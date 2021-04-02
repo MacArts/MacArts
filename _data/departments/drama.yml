@@ -1,0 +1,21 @@
+# formal heading
+heading: Drama
+# short name
+name: Drama
+
+# whether to show links to the gallery and classwork page
+# and their descriptions
+gallery: 
+  description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+classwork:
+  show: False
+
+contact:
+  - name: full name goes here
+    phone: 416.395.3330.123
+    email: "first.last@tdsb.on.ca"
+    room: 114
+  - name: full name goes here
+    phone: 416.395.3330.123
+    email: "first.last@tdsb.on.ca"
+    room: 114

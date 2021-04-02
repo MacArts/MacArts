@@ -24,23 +24,41 @@ a.button-large {
   $shadow-x: -7px;
   $shadow-y: 10px;
 
-  position: relative;
   box-shadow: $shadow-x $shadow-y $blue;
-  top: 0px;
-  left: 0px;
   margin-left: abs($shadow-x);
   margin-bottom: abs($shadow-y);
   @extend %btn-transition;
 
   &:hover {
     box-shadow: ($shadow-x + $diff) ($shadow-y - $diff) $blue;
-    top: $diff;
-    left: -1 * $diff;
+    transform: translate(-$diff, $diff);
     @extend %btn-transition;
   }
 
   @include mq($on-palm) {
     font-size: 1rem;
   }
-}
 
+  &.button-right {
+    position: absolute;
+    left: auto;
+    right: -10px;
+    width: min-content;
+    white-space: nowrap;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    z-index: 2;
+    text-align: right;
+
+    &:hover {
+      transform: translate(-$diff, $diff);
+    }
+
+    @include mq($on-palm) {
+      position: relative;
+      right: -30px;
+      display: block;
+      margin-left: auto;
+    }
+  }
+}

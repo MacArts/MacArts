@@ -1,0 +1,65 @@
+---
+layout: home
+---
+
+<a class="button-large button-right" href="#contact">Contact Us</a>
+<div class="content department">
+	<div class="title">
+	  {%- if page.heading -%}
+	    <h1>{{ page.heading }}</h1>
+	  {%- else -%}
+	    <h1>{{ page.title }}</h1>
+	  {%- endif -%}
+	  <h2>{{ page.subheading }}</h2>
+	</div>
+
+	{%- assign dept = site.data.departments[page.tag] -%}
+
+	<div class="listing">
+		{%- if dept.gallery.show == nil or dept.gallery.show -%}
+		  <div>
+			  <div class="img-wrapper">
+			    <img src="{{ dept.gallery.image | default: '/assets/img/logo.svg' }}" alt="{{ dept.gallery.alt-text | default: '' }}" class="framed">
+			  </div>
+			  <div class="info">
+			    <h2>{{ dept.name }} Showcase Gallery</h2>
+			    <p>{{ dept.gallery.description }}</p>
+			    <a href="{{ '/gallery/' | append: page.tag | relative_url }}" class="button-large">View Gallery</a>
+			  </div>
+			</div>
+		{%- endif -%}
+
+		{%- if dept.classwork.show == nil or dept.classwork.show -%}
+		  <div>
+			  <div class="img-wrapper">
+			    <img src="{{ dept.classwork.image | default: '/assets/img/logo.svg' }}" alt="{{ dep.classwork.alt-text | default: '' }}" class="framed">
+			  </div>
+			  <div class="info">
+			    <h2>Classwork Showcase</h2>
+			    <p>{{ dept.classwork.description }}</p>
+			    <a href="{{ '/classwork/' | append: page.tag | relative_url }}" class="button-large">View Classwork</a>
+			  </div>
+			</div>
+		{%- endif -%}
+	</div>
+	<br>
+	<div id="contact">
+		<h2 class="h1">Contact</h2>
+		<div class="contact__list">
+			{%- for contact in dept.contact -%}
+				<div>
+					<h3 class="h2">{{ contact.name }}</h3>
+					<p><i data-feather="mail"></i><a href="mailto:{{ contact.email }}">{{ contact.email }}</a></p>
+					<p><i data-feather="phone"></i>{{ contact.phone }}</p>
+					<p><i data-feather="map-pin"></i>Room {{ contact.room }}</p>
+				</div>
+			{%- endfor -%}
+		</div>
+	</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+<script>
+	window.onload = () => {
+	  feather.replace();
+	};
+</script>
