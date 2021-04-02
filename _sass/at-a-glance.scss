@@ -1,9 +1,11 @@
 .at-a-glance {
   width: 22%;
   flex: 0 0 22%;
+  order: -1;
 
   @include mq($on-palm) {
     @include content-width;
+    order: 2;
     margin-bottom: 1.5rem;
   }
 
