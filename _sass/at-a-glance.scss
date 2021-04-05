@@ -1,9 +1,12 @@
+$home-breakpoint: $on-tablet;
+
 .at-a-glance {
   width: 22%;
   flex: 0 0 22%;
   order: -1;
 
   @include mq($on-palm) {
+  @include mq($home-breakpoint) {
     @include content-width;
     order: 2;
     margin-bottom: 1.5rem;
@@ -21,7 +24,7 @@
   h2 {
     font-size: 1.25em;
   }
-  @include mq($on-palm) {
+  @include mq($home-breakpoint) {
     h1 {
       font-size: 2.5rem;
     }

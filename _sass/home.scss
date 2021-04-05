@@ -3,7 +3,7 @@
   width: 100%;
   height: 100%;
 
-  @include mq($on-palm) {
+  @include mq($home-breakpoint) {
     flex-flow: column;
   }
 }
@@ -31,7 +31,7 @@
       font-size: 0.5em;
     }
 
-    @include mq($on-palm) {
+    @include mq($home-breakpoint) {
       order: -1;
     }
   }
@@ -68,7 +68,7 @@
     flex-flow: column-reverse;
   }
 
-  @include mq($on-palm) {
+  @include mq($home-breakpoint) {
     display: flex;
     flex-flow: column;
     margin-left: 0;

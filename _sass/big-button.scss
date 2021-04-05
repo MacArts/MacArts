@@ -54,7 +54,7 @@ a.button-large {
       transform: translate(-$diff, $diff);
     }
 
-    @include mq($on-palm) {
+    @include mq($home-breakpoint) {
       position: relative;
       right: -30px;
       display: block;
