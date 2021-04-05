@@ -5,11 +5,16 @@ $home-breakpoint: $on-tablet;
   flex: 0 0 22%;
   order: -1;
 
-  @include mq($on-palm) {
+  @include mq($on-laptop) {
+    width: 30%;
+    flex: 0 0 30%;
+  }
+
   @include mq($home-breakpoint) {
     @include content-width;
     order: 2;
     margin-bottom: 1.5rem;
+    flex: unset;
   }
 
   h1,

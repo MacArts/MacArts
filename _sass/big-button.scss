@@ -37,6 +37,8 @@ a.button-large {
 
   @include mq($on-palm) {
     font-size: 1rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
   }
 
   &.button-right {
