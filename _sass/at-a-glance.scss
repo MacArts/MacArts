@@ -1,20 +1,22 @@
 $home-breakpoint: $on-tablet;
 
 .at-a-glance {
-  width: 22%;
-  flex: 0 0 22%;
+  width: 20%;
+  flex: 0 0 20%;
   order: -1;
 
-  @include mq($on-laptop) {
+  .department & {
     width: 30%;
     flex: 0 0 30%;
   }
 
-  @include mq($home-breakpoint) {
-    @include content-width;
-    order: 2;
-    margin-bottom: 1.5rem;
-    flex: unset;
+  &, .department & {
+    @include mq($home-breakpoint) {
+      @include content-width;
+      order: 2;
+      margin-bottom: 1.5rem;
+      flex: unset;
+    }
   }
 
   h1,

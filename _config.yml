@@ -65,6 +65,7 @@ defaults:
       layout: "department"
       subheading: "Department Page"
       side-title: "What's New"
+      css-class: "department"
   - scope:
       path: "_event_pages"
     values:

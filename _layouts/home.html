@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="home">
+<div class="home {{ page.css-class | default:'' }}">
   <section class="at-a-glance">
     <h1>{{ page.side-title }}</h1>
     <h2>{{ page.side-subtitle }}</h2>
