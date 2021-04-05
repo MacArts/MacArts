@@ -52,9 +52,17 @@
 .department {
   position: relative;
 
+  // Helps avoid contact button from covering long words on laptop screens
+  .title h1 {
+    padding: 0 2.5rem;
+  }
+
   @include mq($on-laptop) {
     .listing {
       @include columnize-list;
+    }
+    .title h1 {
+      padding: 0;
     }
   }
 }
