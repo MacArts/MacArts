@@ -7,6 +7,7 @@
 body,
 html {
   height: 100%;
+  overflow-x: hidden;
 }
 
 html {
@@ -19,7 +20,6 @@ body {
   background-color: $white;
   display: flex;
   flex-flow: column;
-  overflow-x: hidden;
 }
 
 main {
@@ -81,7 +81,7 @@ $border-size: 1rem;
 
     @include mq($on-palm) {
       h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
       }
 
       h2 {

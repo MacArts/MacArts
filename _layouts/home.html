@@ -3,10 +3,12 @@ layout: default
 ---
 
 <div class="home {{ page.css-class | default:'' }}">
-  <section class="at-a-glance">
+  <section class="at-a-glance content">
+    <div class="title">
     <h1>{{ page.side-title }}</h1>
     <h2>{{ page.side-subtitle }}</h2>
-    <hr />
+  </div>
+    <!-- <hr /> -->
     <ul class="post-list">
       {%- assign post_count = 0 -%}
       {%- assign posts = site.posts -%}

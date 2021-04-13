@@ -35,7 +35,7 @@ a.button-large {
     @extend %btn-transition;
   }
 
-  @include mq($on-palm) {
+  @include mq($on-laptop) {
     font-size: 1rem;
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
