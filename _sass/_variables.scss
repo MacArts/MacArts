@@ -9,6 +9,7 @@ $white: #f2f8f8;
 
 /* Media Queries */
 $on-palm: 600px;
+$on-tablet: 800px;
 $on-laptop: 1000px;
 
 @mixin mq($device) {

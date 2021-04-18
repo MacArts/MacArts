@@ -24,23 +24,20 @@ a.button-large {
   $shadow-x: -7px;
   $shadow-y: 10px;
 
-  position: relative;
   box-shadow: $shadow-x $shadow-y $blue;
-  top: 0px;
-  left: 0px;
   margin-left: abs($shadow-x);
   margin-bottom: abs($shadow-y);
   @extend %btn-transition;
 
   &:hover {
     box-shadow: ($shadow-x + $diff) ($shadow-y - $diff) $blue;
-    top: $diff;
-    left: -1 * $diff;
+    transform: translate(-$diff, $diff);
     @extend %btn-transition;
   }
 
-  @include mq($on-palm) {
+  @include mq($on-laptop) {
     font-size: 1rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
   }
 }
-

@@ -1,69 +1,48 @@
 ---
 layout: home
+side-title: Arts
+side-subtitle: At a Glance
 ---
 
-<div class="home">
-  <section class="at-a-glance">
-    <h1>Arts</h1>
-    <h2>At a Glance</h2>
-    <hr />
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      <li class="post">
-        <div class="post-author">
-          <span class="author__image"></span>
-          <div class="author__text">
-            <span class="author__name">{{ post.author }}</span>
-            <span class="post__date">{{ post.date | date: "%b %-d, %Y" }}</span>
-          </div>
-        </div>
-        <h4 class="post-title">{{ post.title }}</h4>
-        <p class="post-body">{{ post.excerpt }}</p>
-      </li>
-      {%- endfor -%}
-    </ul>
-  </section>
+<section class="main">
+  <div id="visual-arts">
+    <a href="{{ "/departments/visual-arts/" | relative_url }}">
+      <h1>
+        <span>Visual & </span>
+        <span>Digital Arts</span>
+      </h1>
+      <img
+        src="https://images.unsplash.com/photo-1510832842230-87253f48d74f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+      />
+    </a>
+  </div>
+  <div id="dance">
+    <a href="{{ "/departments/dance/" | relative_url }}">
+      <h1>Dance</h1>
+      <img
+        src="https://images.unsplash.com/photo-1537365587684-f490102e1225?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80"
+      />
+    </a>
+  </div>
+  <div id="drama">
+    <a href="{{ "/departments/drama/" | relative_url }}">
+      <img
+        src="https://images.unsplash.com/photo-1503095396549-807759245b35?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80"
+      />
+      <h1>Drama</h1>
+    </a>
+  </div>
+  <div id="music">
+    <a href="{{ "/departments/music/" | relative_url }}">
+      <h1>Music</h1>
+      <img
+        src="https://images.unsplash.com/photo-1484972759836-b93f9ef2b293?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+      />
+    </a>
+  </div>
 
-  <section class="main">
-    <div id="visual-arts">
-      <a href="{{ "/departments/visual-arts/" | relative_url }}">
-        <h1>
-          <span>Visual & </span>
-          <span>Digital Arts</span>
-        </h1>
-        <img
-          src="https://images.unsplash.com/photo-1510832842230-87253f48d74f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
-        />
-      </a>
-    </div>
-    <div id="dance">
-      <a href="{{ "/departments/dance/" | relative_url }}">
-        <h1>Dance</h1>
-        <img
-          src="https://images.unsplash.com/photo-1537365587684-f490102e1225?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80"
-        />
-      </a>
-    </div>
-    <div id="drama">
-      <a href="{{ "/departments/drama/" | relative_url }}">
-        <img
-          src="https://images.unsplash.com/photo-1503095396549-807759245b35?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80"
-        />
-        <h1>Drama</h1>
-      </a>
-    </div>
-    <div id="music">
-      <a href="{{ "/departments/music/" | relative_url }}">
-        <h1>Music</h1>
-        <img
-          src="https://images.unsplash.com/photo-1484972759836-b93f9ef2b293?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
-        />
-      </a>
-    </div>
-
-    <h1 class="title">
-      <span>WLMAC</span>
-      <span>Arts</span>
-    </h1>
-  </section>
-</div>
+  <h1 class="title">
+    <span>WLMAC</span>
+    <span>Arts</span>
+  </h1>
+</section>

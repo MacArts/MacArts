@@ -7,6 +7,11 @@
 body,
 html {
   height: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -22,18 +27,23 @@ main {
   padding: 1rem;
 }
 
-h1 {
+
+// .h1, .h2 exist to maintain semantics
+h1, .h1 {
   font-family: $title-font;
   font-weight: 500;
   color: $charcoal;
 }
 
-h2 {
+h2, .h2 {
   font-family: $title-font;
   font-weight: 300;
   color: $charcoal;
 }
 
+a {
+  color: darken($blue, 50%);
+}
 
 $border-size: 1rem;
 .framed {
@@ -44,9 +54,13 @@ $border-size: 1rem;
   margin-bottom: $shadow-size;
 }
 
-.content {
+@mixin content-width {
   width: unquote("min(85%, 1100px)");
   margin: 0 auto;
+}
+
+.content {
+  @include content-width;
   margin-bottom: 2rem;
 
   .title {
@@ -58,6 +72,7 @@ $border-size: 1rem;
 
     h1 {
       font-size: 4rem;
+      line-height: 1.2;
     }
 
     h2 {

@@ -12,6 +12,10 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
+# For the phone filter plugin
+phone_ext_marker: "ext."
+phone_delimiter: "."
+
 nav_links:
   Events: /events/
   Calendar: /calendar/
@@ -25,14 +29,9 @@ nav_links:
     Visual & Digital Arts: /departments/visual-arts/
 
 collections:
-  galleries:
+  departments:
     output: true
-    permalink: /gallery/:name/
-    order:
-      - music.md
-      - drama.md
-      - dance.md
-      - visual-arts.md
+    permalink: /departments/:name/
   event_pages:
     output: true
     permalink: /events/:name/
@@ -42,8 +41,47 @@ collections:
       - drama.html
       - dance.html
       - visual-arts.html
+  galleries:
+    output: true
+    permalink: /gallery/:name/
+    order:
+      - music.md
+      - drama.md
+      - dance.md
+      - visual-arts.md
+  classwork:
+    output: true
+    permalink: /classwork/:name/
+    order:
+      - music.md
+      - drama.md
+      - dance.md
+      - visual-arts.md
 
 defaults:
+  - scope:
+      path: "_departments"
+    values:
+      layout: "department"
+      subheading: "Department Page"
+      side-title: "What's New"
+      css-class: "department"
+  - scope:
+      path: "_event_pages"
+    values:
+      heading: "Events"
+  - scope:
+      path: "_galleries"
+    values:
+      layout: "gallery-display"
+      heading: "Gallery"
+  - scope:
+      path: "_classwork"
+    values:
+      layout: "gallery-display"
+      heading: "Classwork"
+
+  # For display pages
   - scope:
       path: "assets/img/dance"
     values:
@@ -57,15 +95,22 @@ defaults:
     values:
       tag: "music"
   - scope:
-      path: "assets/img/visualarts"
+      path: "assets/img/visual-arts"
     values:
       tag: "visual"
   - scope:
-      path: "_galleries"
+      path: "assets/img/classwork/dance"
     values:
-      layout: "gallery-display"
-      heading: "Gallery"
+      tag: "dance-work"
   - scope:
-      path: "_event_pages"
+      path: "assets/img/classwork/drama"
     values:
-      heading: "Events"
+      tag: "drama-work"
+  - scope:
+      path: "assets/img/classwork/music"
+    values:
+      tag: "music-work"
+  - scope:
+      path: "assets/img/classwork/visual-arts"
+    values:
+      tag: "visual-work"

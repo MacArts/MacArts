@@ -1,0 +1,33 @@
+# formal heading
+heading: Music
+# short name
+name: Music
+
+# whether to show links to the gallery and classwork page
+# and their descriptions
+gallery: 
+  description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+  image: /assets/img/music/m.png
+  alt-text: some alt text for the image
+classwork:
+  description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+  image: /assets/img/music/m2.png
+  alt-text: some alt text for the image
+
+contact:
+  - name: fullname goes here
+    phone: 416.395.3330 ext. 123
+    email: "first.last@tdsb.on.ca"
+    room: 114
+  - name: fullname goeshere2
+    phone: 416.395.3330 ext. 123
+    email: "first.last@tdsb.on.ca"
+    room: 114
+  - name: fullname goeshere3
+    phone: 416.395.3330 ext. 123
+    email: "first.last@tdsb.on.ca"
+    room: 114
+  - name: fullname goeshere4
+    phone: 416.395.3330 ext. 123
+    email: "first.last@tdsb.on.ca"
+    room: 114
