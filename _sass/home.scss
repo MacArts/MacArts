@@ -15,6 +15,7 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 2rem;
+  max-height: calc(100vh - #{$header-height});
 
   .title {
     place-self: center center;
