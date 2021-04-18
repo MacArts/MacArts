@@ -9,11 +9,6 @@
   :not(.at-a-glance) .title {
     margin-left: 1rem;
     margin-right: 1rem;
-
-    // Helps avoid contact button from covering long words on laptop screens
-    h1 {
-      padding: 0 2.5rem;
-    }
   }
 
   @include mq($on-laptop) {
@@ -47,14 +42,6 @@
 
     .at-a-glance .title h1 {
       font-size: 2rem;
-    }
-  }
-
-  .button-right.button-large {
-    bottom: 10%;
-
-    @include mq($home-breakpoint) {
-      bottom: unset;
     }
   }
 }

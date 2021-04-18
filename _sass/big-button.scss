@@ -40,27 +40,4 @@ a.button-large {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
   }
-
-  &.button-right {
-    position: fixed;
-    left: auto;
-    right: -10px;
-    width: min-content;
-    white-space: nowrap;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    z-index: 2;
-    text-align: right;
-
-    &:hover {
-      transform: translate(-$diff, $diff);
-    }
-
-    @include mq($home-breakpoint) {
-      position: relative;
-      right: -30px;
-      display: block;
-      margin-left: auto;
-    }
-  }
 }
