@@ -1,6 +1,6 @@
 ---
 heading: Drama
 title: Drama Department
-side-subtitle: In Mac Drama
-tag: drama
 ---
+
+{%- include at-a-glance.html title="What's New" subtitle="In Mac Drama" tag="drama" -%}
