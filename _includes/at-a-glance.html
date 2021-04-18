@@ -19,7 +19,7 @@
             </div>
           </div>
           <h4 class="post-title">{{ post.title }}</h4>
-          <p class="post-body">{{ post.excerpt }}</p>
+          <p class="post-body">{{ post.excerpt | strip_html | strip_newlines | truncatewords: 30 }}</p>
         </li>
         {% assign post_count = post_count | plus:1 %}
       {%- endif -%}
