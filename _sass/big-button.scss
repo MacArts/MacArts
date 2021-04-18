@@ -42,7 +42,7 @@ a.button-large {
   }
 
   &.button-right {
-    position: absolute;
+    position: fixed;
     left: auto;
     right: -10px;
     width: min-content;
