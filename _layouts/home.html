@@ -2,35 +2,7 @@
 layout: default
 ---
 
-<div class="home {{ page.css-class | default:'' }}">
-  <section class="at-a-glance content">
-    <div class="title">
-    <h1>{{ page.side-title }}</h1>
-    <h2>{{ page.side-subtitle }}</h2>
-  </div>
-    <!-- <hr /> -->
-    <ul class="post-list">
-      {%- assign post_count = 0 -%}
-      {%- assign posts = site.posts -%}
-
-      {%- for post in posts -%}
-        {%- if post_count >= 3 -%} {%- break -%} {%- endif -%}
-        {%- if page.tag == nil or post.tags contains page.tag -%}
-          <li class="post">
-            <div class="post-author">
-              <span class="author__image"></span>
-              <div class="author__text">
-                <span class="author__name">{{ post.author }}</span>
-                <span class="post__date">{{ post.date | date: "%b %-d, %Y" }}</span>
-              </div>
-            </div>
-            <h4 class="post-title">{{ post.title }}</h4>
-            <p class="post-body">{{ post.excerpt }}</p>
-          </li>
-          {% assign post_count = post_count | plus:1 %}
-        {%- endif -%}
-      {%- endfor -%}
-    </ul>
-  </section>
+<div class="home">
+  {%- include at-a-glance.html title="Arts" subtitle="At a Glance" -%}
   {{ content }}
 </div>

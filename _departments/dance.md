@@ -1,6 +1,7 @@
 ---
 heading: Dance
 title: Dance Department
-side-subtitle: In Mac Dance
 tag: dance
 ---
+
+{%- include at-a-glance.html title="What's New" subtitle="In Mac Dance" tag="dance" -%}
