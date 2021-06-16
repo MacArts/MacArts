@@ -46,7 +46,15 @@
     .post-excerpt {
       padding-bottom: 0.5rem;
       margin-bottom: 0.5rem;
-      border-bottom: 1px solid $charcoal;
+      border-bottom: 1px solid lighten($charcoal, 30%);
+    }
+
+    .post-link {
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }
@@ -54,3 +62,49 @@
 // a.button-large.button-right {
 //   bottom: 5rem;
 // }
+
+
+.post {
+  border: 2px solid $charcoal;
+  padding: 0.5rem 1rem;
+  font-size: 1.25em;
+
+  .post-author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+
+    .author__image {
+      display: inline-block;
+      width: 3rem;
+      height: 3rem;
+      margin-right: 0.5rem;
+      border-radius: 50%;
+      background-color: dodgerblue;
+    }
+    .author__text {
+      display: inline-block;
+      font-size: 1.25em;
+
+      span {
+        display: block;
+      }
+      .author__name {
+        font-weight: bold;
+      }
+      .post__date {
+        font-size: 0.75em;
+      }
+    }
+  }
+
+  .post-title {
+    line-height: 1;
+    font-size: 1.5em;
+    margin: 0.75rem 0;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
