@@ -78,6 +78,10 @@ defaults:
     values:
       layout: "gallery-display"
       heading: "Classwork"
+  - scope:
+      path: "_posts"
+    values:
+      layout: "post"
 
   # For display pages
   - scope:
