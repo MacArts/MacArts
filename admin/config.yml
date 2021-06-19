@@ -45,7 +45,7 @@ collections:
         file: '_data/authors.yml'
         fields:
           - label: 'Authors'
-            name: 'items'
+            name: 'authors'
             widget: 'list'
             fields:
               - { label: 'Name', name: 'display_name', widget: 'string' }
