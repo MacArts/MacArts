@@ -16,10 +16,11 @@ collections:
           label: 'Author',
           name: 'author',
           widget: 'relation',
-          collection: 'authors',
-          display_fields: [display_name],
-          search_fields: [display_name],
-          value_field: 'name',
+          collection: 'config',
+          file: 'authors',
+          search_fields: ['authors.*.display_name'],
+          value_field: 'authors.*.display_name',
+          min: 1
         }
       - {
           label: 'Tags',
