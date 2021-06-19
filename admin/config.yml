@@ -1,0 +1,51 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: 'assets/uploads'
+collections:
+  - name: 'blog'
+    label: 'Blog'
+    folder: '_posts/'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - {
+          label: 'Author',
+          name: 'author',
+          widget: 'relation',
+          collection: 'authors',
+          display_fields: [display_name],
+          search_fields: [display_name],
+          value_field: 'name',
+        }
+      - {
+          label: 'Tags',
+          name: 'tags',
+          widget: 'select',
+          multiple: true,
+          options: [
+            { label: 'Dance', value: 'dance' },
+            { label: 'Music', value: 'music' },
+            { label: 'Visual Arts', value: 'visual-arts' },
+            { label: 'Drama', value: 'drama' },
+          ]
+        }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'config'
+    label: 'Config'
+    editor:
+      preview: false
+    files:
+      - label: 'Authors'
+        name: 'authors'
+        file: '_data/authors.yml'
+        fields:
+          - label: 'Authors'
+            name: 'items'
+            widget: 'list'
+            fields:
+              - { label: 'Name', name: 'display_name', widget: 'string' }
+              - { label: 'Image', name: 'image', widget: 'image', allow_multiple: false }
