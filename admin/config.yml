@@ -62,7 +62,7 @@ collections:
     files:
       - label: 'Dance'
         name: 'dance'
-        # file: ''
+        file: ''
         fields:
           - {
             label: 'Gallery',
