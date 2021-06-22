@@ -147,7 +147,7 @@ collections:
             widget: 'list'
             fields:
               - { label: 'Name', name: 'name', widget: 'string' }
-              - { label: 'Description', name: 'description', widget: 'text' }
+              - { label: 'Description', name: 'description', widget: 'markdown' }
               - { label: 'Image', name: 'image', widget: 'image', allow_multiple: false }
           - label: 'Music'
             label_singular: 'Event'
@@ -155,7 +155,7 @@ collections:
             widget: 'list'
             fields:
               - { label: 'Name', name: 'name', widget: 'string' }
-              - { label: 'Description', name: 'description', widget: 'text' }
+              - { label: 'Description', name: 'description', widget: 'markdown' }
               - { label: 'Image', name: 'image', widget: 'image', allow_multiple: false }
           - label: 'Drama'
             label_singular: 'Event'
@@ -163,7 +163,7 @@ collections:
             widget: 'list'
             fields:
               - { label: 'Name', name: 'name', widget: 'string' }
-              - { label: 'Description', name: 'description', widget: 'text' }
+              - { label: 'Description', name: 'description', widget: 'markdown' }
               - { label: 'Image', name: 'image', widget: 'image', allow_multiple: false }
           - label: 'Dance'
             label_singular: 'Event'
@@ -171,7 +171,7 @@ collections:
             widget: 'list'
             fields:
               - { label: 'Name', name: 'name', widget: 'string' }
-              - { label: 'Description', name: 'description', widget: 'text' }
+              - { label: 'Description', name: 'description', widget: 'markdown' }
               - { label: 'Image', name: 'image', widget: 'image', allow_multiple: false }
           - label: 'Visual Arts'
             label_singular: 'Event'
@@ -179,7 +179,7 @@ collections:
             widget: 'list'
             fields:
               - { label: 'Name', name: 'name', widget: 'string' }
-              - { label: 'Description', name: 'description', widget: 'text' }
+              - { label: 'Description', name: 'description', widget: 'markdown' }
               - { label: 'Image', name: 'image', widget: 'image', allow_multiple: false }
   - name: 'departments'
     label: 'Departments'
