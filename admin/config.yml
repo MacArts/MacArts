@@ -68,6 +68,6 @@ collections:
             label: 'Gallery',
             name: 'gallery',
             widget: 'image',
-            media_folder: '{{media_folder}}/dance'
+            media_folder: '{{media_folder}}/dance',
             required: false
           }
