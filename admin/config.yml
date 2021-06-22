@@ -114,6 +114,7 @@ collections:
         file: '_data/events.yml'
         fields:
           - label: 'Central Arts Council'
+            label_singular: 'Event'
             name: 'central'
             widget: 'list'
             fields:
@@ -121,6 +122,7 @@ collections:
               - { label: 'Description', name: 'description', widget: 'text' }
               - { label: 'Image', name: 'image', widget: 'image', allow_multiple: false }
           - label: 'Music'
+            label_singular: 'Event'
             name: 'music'
             widget: 'list'
             fields:
@@ -128,6 +130,7 @@ collections:
               - { label: 'Description', name: 'description', widget: 'text' }
               - { label: 'Image', name: 'image', widget: 'image', allow_multiple: false }
           - label: 'Drama'
+            label_singular: 'Event'
             name: 'drama'
             widget: 'list'
             fields:
@@ -135,6 +138,7 @@ collections:
               - { label: 'Description', name: 'description', widget: 'text' }
               - { label: 'Image', name: 'image', widget: 'image', allow_multiple: false }
           - label: 'Dance'
+            label_singular: 'Event'
             name: 'dance'
             widget: 'list'
             fields:
@@ -142,6 +146,7 @@ collections:
               - { label: 'Description', name: 'description', widget: 'text' }
               - { label: 'Image', name: 'image', widget: 'image', allow_multiple: false }
           - label: 'Visual Arts'
+            label_singular: 'Event'
             name: 'visual-arts'
             widget: 'list'
             fields:
