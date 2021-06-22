@@ -1,7 +1,8 @@
 backend:
   name: git-gateway
   branch: netlify-cms
-media_folder: 'assets/uploads'
+media_folder: 'assets/img'
+logo_url: 'https://wlmacarts.netlify.app/assets/img/logo.svg'
 collections:
   - name: 'blog'
     label: 'Blog'
@@ -50,7 +51,23 @@ collections:
             widget: 'list'
             fields:
               - { label: 'Name', name: 'name', widget: 'string' }
-              - { label: 'Image', name: 'headshot', widget: 'image', allow_multiple: false, required: false, media_folder: '/assets/img/members' }
+              - { label: 'Image', name: 'headshot', widget: 'image', allow_multiple: false, required: false, media_folder: '{{media_folder}}/members' }
               - { label: 'Council', name: 'council', widget: 'string' }
               - { label: 'Position', name: 'position', widget: 'string' }
               - { label: 'Bio', name: 'bio', widget: 'text' }
+  - name: 'galleries'
+    label: 'Galleries'
+    editor:
+      preview: false
+    files:
+      - label: 'Dance'
+        name: 'dance'
+        # file: ''
+        fields:
+          - {
+            label: 'Gallery',
+            name: 'gallery',
+            widget: 'image',
+            media_folder: '{{media_folder}}/dance'
+            required: false
+          }
