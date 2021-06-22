@@ -50,7 +50,7 @@ collections:
             widget: 'list'
             fields:
               - { label: 'Name', name: 'name', widget: 'string' }
-              - { label: 'Image', name: 'headshot', widget: 'image', allow_multiple: false, required: false }
+              - { label: 'Image', name: 'headshot', widget: 'image', allow_multiple: false, required: false, media_folder: '/assets/img/members' }
               - { label: 'Council', name: 'council', widget: 'string' }
               - { label: 'Position', name: 'position', widget: 'string' }
               - { label: 'Bio', name: 'bio', widget: 'text' }
