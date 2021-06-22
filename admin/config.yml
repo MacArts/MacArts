@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: main
+  branch: netlify-cms
 media_folder: 'assets/uploads'
 collections:
   - name: 'blog'
@@ -18,9 +18,9 @@ collections:
           name: 'author',
           widget: 'relation',
           collection: 'config',
-          file: 'authors',
-          search_fields: ['authors.*.display_name'],
-          value_field: 'authors.*.display_name',
+          file: 'members',
+          search_fields: ['members.*.display_name'],
+          value_field: 'members.*.display_name',
           min: 1
         }
       - {
@@ -42,12 +42,15 @@ collections:
       preview: false
     files:
       - label: 'Authors'
-        name: 'authors'
-        file: '_data/authors.yml'
+        name: 'members'
+        file: '_data/members.yml'
         fields:
           - label: 'Authors'
             name: 'authors'
             widget: 'list'
             fields:
-              - { label: 'Name', name: 'display_name', widget: 'string' }
-              - { label: 'Image', name: 'image', widget: 'image', allow_multiple: false }
+              - { label: 'Name', name: 'name', widget: 'string' }
+              - { label: 'Image', name: 'headshot', widget: 'image', allow_multiple: false, required: false }
+              - { label: 'Council', name: 'council', widget: 'string' }
+              - { label: 'Position', name: 'position', widget: 'string' }
+              - { label: 'Bio', name: 'bio', widget: 'text' }

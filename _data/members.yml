@@ -1,14 +1,15 @@
-- name: Person AA
-  council: central
-  position: chair
-  bio: Nostrum pariatur nesciunt et est eaque amet ipsam et. Odio et doloribus enim quia sed sit et rem. Sit et repudiandae nesciunt a ea et. Consequatur ab veritatis quos. Voluptatem deleniti vero nobis et. Voluptate consequatur dolorem harum magnam atque.
-  headshot: Person A.jpg
-- name: Jennifer Scott-Barnier
-  council: central
-  position: another position
-  bio: Sit et repudiandae nesciunt a ea et. Consequatur ab veritatis quos. Voluptatem deleniti vero nobis et. Voluptate consequatur dolorem harum magnam atque.
-  headshot: PersonB2.png
-- name: Person CC
-  council: central
-  position: another position
-  bio: Default profile picture demo. Sit et repudiandae nesciunt a ea et. Consequatur ab veritatis quos. Voluptatem deleniti vero nobis et. 
+members:
+  - name: Person AA
+    council: central
+    position: chair
+    bio: Nostrum pariatur nesciunt et est eaque amet ipsam et. Odio et doloribus enim quia sed sit et rem. Sit et repudiandae nesciunt a ea et. Consequatur ab veritatis quos. Voluptatem deleniti vero nobis et. Voluptate consequatur dolorem harum magnam atque.
+    headshot: Person A.jpg
+  - name: Jennifer Scott-Barnier
+    council: central
+    position: another position
+    bio: Sit et repudiandae nesciunt a ea et. Consequatur ab veritatis quos. Voluptatem deleniti vero nobis et. Voluptate consequatur dolorem harum magnam atque.
+    headshot: PersonB2.png
+  - name: Person CC
+    council: central
+    position: another position
+    bio: Default profile picture demo. Sit et repudiandae nesciunt a ea et. Consequatur ab veritatis quos. Voluptatem deleniti vero nobis et. 
