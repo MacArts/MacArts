@@ -153,3 +153,36 @@ collections:
               - { label: 'Name', name: 'name', widget: 'string' }
               - { label: 'Description', name: 'description', widget: 'text' }
               - { label: 'Image', name: 'image', widget: 'image', allow_multiple: false }
+  - name: 'departments'
+    label: 'Departments'
+    editor:
+      preview: false
+    files:
+      - label: 'Music'
+        name: 'music'
+        file: '_data/departments/music.yml'
+        fields:
+          - { label: 'Heading', name: 'heading', widget: 'hidden', default: 'Music' }
+          - { label: 'Name', name: 'name', widget: 'hidden', default: 'Music' }
+          - label: 'Gallery'
+            name: 'gallery'
+            widget: 'object'
+            fields:
+              - { label: 'Description', name: 'description', widget: 'text' }
+              - { label: 'Image', name: 'image', widget: 'image', media_folder: '{{media_folder}}/music' }
+              - { label: 'Alt Text', name: 'alt-text', widget: 'string' }
+          - label: 'Classwork'
+            name: 'classwork'
+            widget: 'object'
+            fields:
+              - { label: 'Description', name: 'description', widget: 'text' }
+              - { label: 'Image', name: 'image', widget: 'image', media_folder: '{{media_folder}}/music' }
+              - { label: 'Alt Text', name: 'alt-text', widget: 'string' }
+          - label: 'Contact'
+            name: 'contact'
+            widget: 'list'
+            fields:
+              - { label: 'Name', name: 'name', widget: 'string' }
+              - { label: 'Email', name: 'email', widget: 'string' }
+              - { label: 'Phone', name: 'phone', widget: 'string' }
+              - { label: 'Room', name: 'room', widget: 'string' }
