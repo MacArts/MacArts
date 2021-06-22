@@ -71,3 +71,36 @@ collections:
             media_folder: '{{media_folder}}/dance',
             required: false
           }
+      - label: 'Music'
+        name: 'music'
+        file: 'tmp/music'
+        fields:
+          - {
+            label: 'Gallery',
+            name: 'gallery',
+            widget: 'image',
+            media_folder: '{{media_folder}}/music',
+            required: false
+          }
+      - label: 'Drama'
+        name: 'drama'
+        file: 'tmp/drama'
+        fields:
+          - {
+            label: 'Gallery',
+            name: 'gallery',
+            widget: 'image',
+            media_folder: '{{media_folder}}/drama',
+            required: false
+          }
+      - label: 'Visual Arts'
+        name: 'visual-arts'
+        file: 'tmp/visual-arts'
+        fields:
+          - {
+            label: 'Gallery',
+            name: 'gallery',
+            widget: 'image',
+            media_folder: '{{media_folder}}/visual-arts',
+            required: false
+          }
