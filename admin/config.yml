@@ -71,6 +71,13 @@ collections:
             media_folder: '{{media_folder}}/dance',
             required: false
           }
+          - {
+            label: 'Classwork',
+            name: 'classwork',
+            widget: 'image',
+            media_folder: '{{media_folder}}/classwork/dance',
+            required: false
+          }
       - label: 'Music'
         name: 'music'
         file: 'tmp/music'
@@ -80,6 +87,13 @@ collections:
             name: 'gallery',
             widget: 'image',
             media_folder: '{{media_folder}}/music',
+            required: false
+          }
+          - {
+            label: 'Classwork',
+            name: 'classwork',
+            widget: 'image',
+            media_folder: '{{media_folder}}/classwork/music',
             required: false
           }
       - label: 'Drama'
@@ -93,6 +107,13 @@ collections:
             media_folder: '{{media_folder}}/drama',
             required: false
           }
+          - {
+            label: 'Classwork',
+            name: 'classwork',
+            widget: 'image',
+            media_folder: '{{media_folder}}/classwork/drama',
+            required: false
+          }
       - label: 'Visual Arts'
         name: 'visual-arts'
         file: 'tmp/visual-arts'
@@ -102,6 +123,13 @@ collections:
             name: 'gallery',
             widget: 'image',
             media_folder: '{{media_folder}}/visual-arts',
+            required: false
+          }
+          - {
+            label: 'Classwork',
+            name: 'classwork',
+            widget: 'image',
+            media_folder: '{{media_folder}}/classwork/visual-arts',
             required: false
           }
   - name: 'events'
