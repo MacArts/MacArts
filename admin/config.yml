@@ -20,8 +20,8 @@ collections:
           widget: 'relation',
           collection: 'config',
           file: 'members',
-          search_fields: ['members.*.display_name'],
-          value_field: 'members.*.display_name',
+          search_fields: ['members.*.name'],
+          value_field: 'members.*.name',
           min: 1
         }
       - {
