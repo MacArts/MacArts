@@ -62,7 +62,7 @@ collections:
     files:
       - label: 'Dance'
         name: 'dance'
-        file: 'tmp/dance'
+        file: '_data/galleries/dance.yml'
         fields:
           - {
             label: 'Gallery',
@@ -70,6 +70,15 @@ collections:
             widget: 'image',
             media_folder: '{{media_folder}}/dance',
             required: false
+          }
+          - {
+            label: 'Gallery Videos',
+            label_singular: 'Video',
+            name: 'gallery-videos',
+            required: false,
+            widget: 'list',
+            summary: '{{fields.url}}',
+            field: { label: "Video URL", name: 'url', widget: 'string' }
           }
           - {
             label: 'Classwork',
