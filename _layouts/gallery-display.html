@@ -3,6 +3,17 @@ layout: info
 ---
 
 <div class="grid" id="gallery">
+  {%- if page.url contains 'classwork' -%}
+    {%- assign prop = 'classwork-videos' -%}
+    {%- assign tag = page.tag | split: '-' | first -%}
+  {% else %}
+    {%- assign prop = 'gallery-videos' -%}
+    {%- assign tag = page.tag -%}
+  {%- endif -%}
+  {%- for vid in site.data.galleries[tag][prop] -%}
+    {%- assign id = vid | split: "v=" | last | split: "&" | first -%}
+    <iframe class="framed" width="560" height="315" src="https://www.youtube.com/embed/{{- id -}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  {%- endfor -%}
   {%- assign gallery_media = site.static_files | where: "tag", page.tag -%}
   {%- for img in gallery_media -%}
     <img src="{{ img.path | relative_url }}" alt="" class="framed">
