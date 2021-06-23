@@ -170,7 +170,7 @@ collections:
           }
       - label: 'Visual Arts'
         name: 'visual-arts'
-        file: '_data/galleries/visual-arts.yml'
+        file: '_data/galleries/visual.yml'
         fields:
           - {
             label: 'Gallery',
