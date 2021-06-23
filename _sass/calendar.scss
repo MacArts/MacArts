@@ -1,6 +1,11 @@
 .calendar-wrapper {
   display: grid;
   grid-template-columns: auto 1fr;
+
+  @include mq($on-tablet) {
+    display: flex;
+    flex-flow: column-reverse;
+  }
 }
 
 section.filter {
