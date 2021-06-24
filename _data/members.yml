@@ -1,21 +1,134 @@
 members:
-  - name: Person AA
-    council: central
-    position: chair
-    bio: Nostrum pariatur nesciunt et est eaque amet ipsam et. Odio et doloribus
-      enim quia sed sit et rem. Sit et repudiandae nesciunt a ea et. Consequatur
-      ab veritatis quos. Voluptatem deleniti vero nobis et. Voluptate
-      consequatur dolorem harum magnam atque.
+  - name: Lisa Cohen
+    council: Central
+    position: Staff and ACL of Arts
+    bio: "Lisa Cohen earned her Honours Bachelor of Music Education (with
+      Distinction) from Western University in 2008, and her Masters in Teaching
+      from OISE in 2011, with a thesis on equity and ethics in arts education.
+      She has enjoyed performing on the flute with Wind Ensembles and
+      singing/conducting choirs both locally and internationally, and now loves
+      sharing her passion for the arts with students at Mackenzie! Ms. Cohen
+      strongly believes in the arts as a powerful vehicle for the simultaneous
+      pursuit of excellence, improved cognition, and the promotion of well
+      being. "
     headshot: /assets/img/members/player-01.png
   - name: Jennifer Scott-Barnier
-    council: central
-    position: another position
-    bio: Sit et repudiandae nesciunt a ea et. Consequatur ab veritatis quos.
-      Voluptatem deleniti vero nobis et. Voluptate consequatur dolorem harum
-      magnam atque.
+    council: Central
+    position: Staff
+    bio: NO INFO PROVIDED
     headshot: /assets/img/members/PersonB2.png
-  - name: Person CC
-    council: central
-    position: another position
-    bio: Default profile picture demo. Sit et repudiandae nesciunt a ea et.
-      Consequatur ab veritatis quos. Voluptatem deleniti vero nobis et.
+  - name: Alexandra Peters
+    council: Central
+    position: Staff
+    bio: Alexandra Peters graduated from Queen's University with a Bachelor of
+      Education and received a Bachelor of Fine Arts Degree with a Minor in
+      Geography from the University of Ottawa. Her artwork has been displayed in
+      various galleries in Ottawa, Toronto, Kingston, and Etobicoke. Currently,
+      her work can be found in a gallery in Port Hope. Ms.Peters strongly
+      promotes inclusive art spaces where students' voices are valued and heard.
+      She thoroughly enjoys educating budding artists and inspiring a passion in
+      her students to become life-long learners.
+  - name: Colin Fallowfield
+    council: Central
+    position: Staff
+    bio: "Colin Fallowfield earned his undergraduate degree from York University in
+      2009, with a specialty in Devised Theatre. Before completing his Bachelor
+      of Education at OISE in 2012, he co-founded a training-focused theatre
+      company in Toronto. He has spent his whole life as a performer and
+      musician, participating in many musicals, choirs, collectively created
+      works, and acoustic performances throughout Ontario and Kent, UK. He has
+      also directed two musical productions: ‘Bugsy Malone’, and ‘Hairspray’,
+      both at Wilmington Academy, Dartford, UK. He is a strong advocate for
+      equity and social justice in education and for the importance of the arts
+      as a mode of creative expression for young people."
+  - name: Alyssa Wang
+    council: Central
+    position: Chair
+    bio: Alyssa Wang is a grade 12 student who has had the magic of art flow
+      throughout her life. Whether it's painting in serenity or having a blast
+      with music, drama and dance performances, she is sure to love every second
+      of it. Her goal is to share this passion with others at MAC through
+      ensuring the Arts Council’s numerous events and initiatives run smoothly.
+      Throughout the past 3 years of serving on the council, she has made
+      lifelong memories of the wonderful arts community and the opportunities it
+      has given her.
+  - name: Meghan Hendrickson
+    council: Music
+    position: Senior Chair
+    bio: "Meghan Hendrickson is a passionate musician and arts student. She has
+      grown up in the performing arts and loves the stage - and the backstage
+      too! She is always ready to play her trumpet, hit some drums or bust into
+      song. If there’s a performance on stage she is sure to be nearby. Meghan
+      is incredibly proud of the Music and General Arts Department and is
+      grateful for the endless opportunities she has taken part in over her high
+      school years. "
+  - name: Hassan Khan
+    bio: Hassan Khan’s first exposure to music was in grade 3 steel pan lessons, but
+      it wasn’t until the grade 8 talent show performing “Master of the House”
+      that he fell in love with the spotlight. Throughout high school, he’s been
+      as involved with Mackenzie’s music scene as he could possibly be, whether
+      it was performing in the school’s The Audition musical, soloing in Java
+      After Dark, singing in choir, or playing in concert band, jazz band, and
+      klezmer band. He’s also been known to dabble in other arts, including
+      acting in Much Ado About Zoom Class and taking dance class.
+    position: Junior Chair
+    council: Music
+  - name: Mia Rebelo
+    council: Drama
+    position: Chair
+    bio: "Mia Rebelo has loved theatre and drama her whole life. Whether she is
+      reading Shakespeare plays late at night, performing on stage, or dancing
+      to showtunes in her bedroom, she is always looking for ways to bring
+      theatre into her life. Mia has participated in many youth theatre
+      productions and has performed in many Mackenzie musicals and shows. She
+      has recently delved into script writing, and was elated to have her
+      original play, Much Ado About Zoom Class, performed and produced this past
+      year as Mackenzie’s first online show. Mia was proud to guide drama
+      council through this challenging year, and is planning to major in musical
+      theatre in post secondary. "
+  - name: Skye Haik
+    council: Dance
+    position: Co Chair
+    bio: "Skye Haik is a grade 11 student who has been involved in dance and the
+      arts since a very young age. For the past 13 years, she has been working
+      on improving her skills in a variety of dance styles and sharing her
+      passion for dance with others! During her past years as a student at
+      Mackenzie, she has been a part of just about every dance show or
+      performance she could’ve. From choreographing and performing her own
+      pieces at dance nights to learning routines in class with her peers to
+      performing as a dancer in the school musical and even running dance
+      initiatives throughout the years! Skye is so excited to see what the
+      Mackenzie Dance Community has planned for the future years to come!\t"
+  - name: Tiffany Tham
+    council: Dance
+    position: Co Chair
+    bio: Tiffany Tham is a grade 11 student who has a passion for dance and the
+      performing arts. Since the age of four, she has taken classes in many
+      dance forms such as ballet, hip hop, contemporary, jazz and so much more!
+      Throughout her years at Mackenzie, she has spent her time rehearsing and
+      performing in Dance Nights and Culturama. Tiffany is extremely honoured to
+      be given the opportunity to be a part of the Mackenzie Dance and Arts
+      communities.
+  - name: Madison Anderson
+    council: Visual Arts
+    position: Co Chair
+    bio: "Madison (or Maddy) Anderson is a grade 12 student who has been drawn to
+      visual arts her entire life. She has been in visual arts classes for most
+      of her school years and it has now become a part of her daily life. She
+      can be mostly found wandering the hallways in school, on zoom meetings, or
+      just taking walks outside. Maddy is very proud of all the hard work
+      everyone in the Visual Arts Council has done this past year and is
+      profoundly grateful for everyone’s dedication to all the initiatives
+      created. She cannot wait to see what amazing new initiatives Visual Arts
+      will do next year!    "
+  - name: Kelly Vu
+    council: Visual Arts
+    position: Co Chair
+    bio: "Kelly is a grade 12 student who loves to create any form of visual art as
+      well as sharing artworks for all of Mackenzie to see. Whether it be to ask
+      a simple question or to chat, her door is always open! She can mostly be
+      found in the photography dark room at school, uploading students' artworks
+      on Visual Arts Council’s Instagram account or petting any cats in sight.
+      Kelly is very happy how Visual Arts Council has held up this year despite
+      having all of their events online and hopes that Visual Arts Council gains
+      even more success next year. "
