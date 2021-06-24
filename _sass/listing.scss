@@ -57,6 +57,7 @@
       flex-flow: column;
       justify-content: flex-start;
       align-items: flex-start;
+      flex-basis: 100%;
 
       p {
         font-size: 1.25rem;
@@ -74,10 +75,10 @@
 
     .img-wrapper {
       display: flex;
-      flex-basis: 100%;
       min-width: 220px;
-      max-width: 40%;
       max-height: 300px;
+      height: auto;
+      flex-shrink: 2;
 
       img {
         width: 100%;
@@ -95,10 +96,6 @@
 
     > div {
       width: calc(50% - 2.5rem);
-
-      .img-wrapper {
-        flex-basis: unset;
-      }
     }
 
     @include mq(1250px) {
