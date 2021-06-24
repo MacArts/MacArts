@@ -90,6 +90,10 @@
 
     .site-logo {
       height: 80px;
+
+      img {
+        width: 100%;
+      }
     }
 
     label[for="nav-trigger"] {
