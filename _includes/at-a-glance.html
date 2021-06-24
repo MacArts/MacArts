@@ -12,7 +12,10 @@
       {%- if include.tag == nil or post.tags contains include.tag -%}
         <li class="post">
           <div class="post-author">
-            <span class="author__image"></span>
+            <span class="author__image">
+              {%- assign author = site.data.members.members | where:"name",post.author | first -%}
+              <img src="{{ "/assets/img" | append: author.headshot | relative_url }}" alt="{{ post.author }}">
+            </span>
             <div class="author__text">
               <span class="author__name">{{ post.author }}</span>
               <span class="post__date">{{ post.date | date: "%b %-d, %Y" }}</span>
