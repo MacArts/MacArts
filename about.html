@@ -13,7 +13,7 @@ default_avatar: "/assets/img/members/default.png"
         {%- capture headshot -%}
           {{ member.headshot | default: page.default_avatar }}
         {%- endcapture -%}
-        <img src="{{ headshot | relative_url }}" alt="" class="framed">
+        <img src="{{ "/assets/img" | append: headshot | relative_url }}" alt="" class="framed">
       </div>
       <div class="info">
         <h2>{{ member.name }}</h2>
