@@ -1,21 +1,20 @@
-# formal heading
 heading: Dance
-# short name
 name: Dance
-
-# whether to show links to the gallery and classwork page
-# and their descriptions
-gallery: 
-  show: False
+gallery:
+  show: false
+  description: lorem ipsum
+  image: /music/m4.png
+  alt-text: dance
 classwork:
   description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-
+  image: /music/m4.png
+  alt-text: dance
 contact:
-  - name: full name goes here
-    phone: 416.395.3330.123
-    email: "first.last@tdsb.on.ca"
-    room: 114
-  - name: full name goes here
-    phone: 416.395.3330.123
-    email: "first.last@tdsb.on.ca"
-    room: 114
+  - name: Alexandra Peters
+    phone: 416.395.3330 ext. 20100
+    email: alexandra.peters@tdsb.on.ca
+    room: "216"
+  - name: Colin Fallowfield
+    phone: 416.395.3330 ext. 20100
+    email: colin.fallowfield@tdsb.on.ca
+    room: "144"
