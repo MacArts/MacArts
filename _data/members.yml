@@ -11,12 +11,12 @@ members:
       strongly believes in the arts as a powerful vehicle for the simultaneous
       pursuit of excellence, improved cognition, and the promotion of well
       being. "
-    headshot: /assets/img/members/player-01.png
+    headshot: /members/ms.-cohen.jpg
   - name: Jennifer Scott-Barnier
     council: Central
     position: Staff
     bio: NO INFO PROVIDED
-    headshot: /assets/img/members/PersonB2.png
+    headshot: /members/msscottbarnier.jpg
   - name: Alexandra Peters
     council: Central
     position: Staff
@@ -28,6 +28,7 @@ members:
       promotes inclusive art spaces where students' voices are valued and heard.
       She thoroughly enjoys educating budding artists and inspiring a passion in
       her students to become life-long learners.
+    headshot: /members/ms.-peters.jpeg
   - name: Colin Fallowfield
     council: Central
     position: Staff
@@ -41,6 +42,7 @@ members:
       both at Wilmington Academy, Dartford, UK. He is a strong advocate for
       equity and social justice in education and for the importance of the arts
       as a mode of creative expression for young people."
+    headshot: /members/mr.fallowfield.jpg
   - name: Alyssa Wang
     council: Central
     position: Chair
@@ -52,6 +54,7 @@ members:
       Throughout the past 3 years of serving on the council, she has made
       lifelong memories of the wonderful arts community and the opportunities it
       has given her.
+    headshot: /members/c-alyssa.jpg
   - name: Meghan Hendrickson
     council: Music
     position: Senior Chair
@@ -62,6 +65,7 @@ members:
       is incredibly proud of the Music and General Arts Department and is
       grateful for the endless opportunities she has taken part in over her high
       school years. "
+    headshot: /members/meghan-hendrickson-choir-.jpg
   - name: Hassan Khan
     bio: Hassan Khan’s first exposure to music was in grade 3 steel pan lessons, but
       it wasn’t until the grade 8 talent show performing “Master of the House”
@@ -73,6 +77,7 @@ members:
       acting in Much Ado About Zoom Class and taking dance class.
     position: Junior Chair
     council: Music
+    headshot: /members/m-hassan.png
   - name: Mia Rebelo
     council: Drama
     position: Chair
@@ -86,6 +91,7 @@ members:
       year as Mackenzie’s first online show. Mia was proud to guide drama
       council through this challenging year, and is planning to major in musical
       theatre in post secondary. "
+    headshot: /members/miaheadshot.jpg
   - name: Skye Haik
     council: Dance
     position: Co Chair
@@ -99,6 +105,7 @@ members:
       performing as a dancer in the school musical and even running dance
       initiatives throughout the years! Skye is so excited to see what the
       Mackenzie Dance Community has planned for the future years to come!\t"
+    headshot: /members/d-skye.jpeg
   - name: Tiffany Tham
     council: Dance
     position: Co Chair
@@ -109,6 +116,7 @@ members:
       performing in Dance Nights and Culturama. Tiffany is extremely honoured to
       be given the opportunity to be a part of the Mackenzie Dance and Arts
       communities.
+    headshot: /members/d-tiffany.jpg
   - name: Madison Anderson
     council: Visual Arts
     position: Co Chair
@@ -121,6 +129,7 @@ members:
       profoundly grateful for everyone’s dedication to all the initiatives
       created. She cannot wait to see what amazing new initiatives Visual Arts
       will do next year!    "
+    headshot: /members/va-maddy.jpg
   - name: Kelly Vu
     council: Visual Arts
     position: Co Chair
@@ -132,3 +141,4 @@ members:
       Kelly is very happy how Visual Arts Council has held up this year despite
       having all of their events online and hopes that Visual Arts Council gains
       even more success next year. "
+    headshot: /members/va-kelly.jpg
