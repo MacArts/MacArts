@@ -1,11 +1,6 @@
-# formal heading
 heading: Music
-# short name
 name: Music
-
-# whether to show links to the gallery and classwork page
-# and their descriptions
-gallery: 
+gallery:
   description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
   image: /assets/img/music/m.png
   alt-text: some alt text for the image
@@ -13,21 +8,20 @@ classwork:
   description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
   image: /assets/img/music/m2.png
   alt-text: some alt text for the image
-
 contact:
-  - name: fullname goes here
-    phone: 416.395.3330 ext. 123
-    email: "first.last@tdsb.on.ca"
+  - name: "Lisa Cohen: Music, Visual Arts, ACL of Arts"
+    phone: "416.395.3330 ext. "
+    email: lisa.abrams@tdsb.on.ca
+    room: 114 or 217
+  - name: Jennifer Scott-Barnier
+    phone: 416.395.3330 ext. 20142
+    email: jennifer.scottbarnier@tdsb.on.ca
     room: 114
-  - name: fullname goeshere2
-    phone: 416.395.3330 ext. 123
-    email: "first.last@tdsb.on.ca"
-    room: 114
-  - name: fullname goeshere3
-    phone: 416.395.3330 ext. 123
-    email: "first.last@tdsb.on.ca"
-    room: 114
-  - name: fullname goeshere4
-    phone: 416.395.3330 ext. 123
-    email: "first.last@tdsb.on.ca"
-    room: 114
+  - name: Alexandra Peters
+    phone: 416.395.3330 ext. 20100
+    email: alexandra.peters@tdsb.on.ca
+    room: "216"
+  - name: Colin Fallowfield
+    phone: 416.395.3330 ext. 20100
+    email: colin.fallowfield@tdsb.on.ca
+    room: "144"
