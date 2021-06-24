@@ -16,7 +16,7 @@ layout: info
   {%- endfor -%}
   {%- assign gallery_media = site.static_files | where: "tag", page.tag -%}
   {%- for img in gallery_media -%}
-    <img src="{{ img.path | relative_url }}" alt="" class="framed">
+    <img loading="lazy" src="{{ img.path | relative_url }}" alt="" class="framed">
   {%- endfor -%}
 </div>
 
