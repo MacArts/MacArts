@@ -18,7 +18,6 @@ gallery:
   alt-text: Drama Council
   image: /music/m4.png
 classwork:
-  show: false
   description: lorem ipsum
   image: /music/m4.png
   alt-text: drama
