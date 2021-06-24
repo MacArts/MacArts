@@ -9,7 +9,7 @@ classwork:
   image: /assets/img/music/m2.png
   alt-text: some alt text for the image
 contact:
-  - name: "Lisa Cohen: Music, Visual Arts, ACL of Arts"
+  - name: Lisa Cohen
     phone: "416.395.3330 ext. "
     email: lisa.abrams@tdsb.on.ca
     room: 114 or 217
@@ -17,11 +17,3 @@ contact:
     phone: 416.395.3330 ext. 20142
     email: jennifer.scottbarnier@tdsb.on.ca
     room: 114
-  - name: Alexandra Peters
-    phone: 416.395.3330 ext. 20100
-    email: alexandra.peters@tdsb.on.ca
-    room: "216"
-  - name: Colin Fallowfield
-    phone: 416.395.3330 ext. 20100
-    email: colin.fallowfield@tdsb.on.ca
-    room: "144"
