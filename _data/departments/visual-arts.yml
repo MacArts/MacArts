@@ -1,21 +1,19 @@
-# formal heading
 heading: Visual & Digital Arts
-# short name for the heading
 name: Visual Arts
-
-# whether to show links to the gallery and classwork page
-# and their descriptions
-gallery: 
+gallery:
   description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+  image: /music/m4.png
+  alt-text: art
 classwork:
   description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-
+  alt-text: art
+  image: /music/m4.png
 contact:
-  - name: full name goes here
-    phone: 416.395.3330.123
-    email: "first.last@tdsb.on.ca"
-    room: 114
-  - name: full name goes here
-    phone: 416.395.3330.123
-    email: "first.last@tdsb.on.ca"
-    room: 114
+  - name: Lisa Cohen
+    phone: "416.395.3330 ext. "
+    email: lisa.abrams@tdsb.on.ca
+    room: 114 or 217
+  - name: Alexandra Peters
+    phone: 416.395.3330 ext. 20100
+    email: alexandra.peters@tdsb.on.ca
+    room: "216"
