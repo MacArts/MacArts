@@ -1,14 +1,10 @@
 central:
   - name: Arts in Bloom
-    description: >-
-      Arts in Bloom is a one-week celebration of The Arts that happens each year
-      in the springtime! Each day of the week is scheduled with a performance or
-      workshop that focuses on one of the art forms before ending the week off
-      with a show that is all-encompassing. You don’t want to miss the biggest
-      week for MAC Arts! 
-
-
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/1FZSQZZm73U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    description: Arts in Bloom is a one-week celebration of The Arts that happens
+      each year in the springtime! Each day of the week is scheduled with a
+      performance or workshop that focuses on one of the art forms before ending
+      the week off with a show that is all-encompassing. You don’t want to miss
+      the biggest week for MAC Arts!
     image: https://loremflickr.com/320/240/trumpet
   - name: Java After Dark
     description: Java After Dark is Mackenzie’s collaborative cross-discipline arts
