@@ -12,14 +12,14 @@ central:
       visual art pieces, films, spoken word and poetry. This event is open to
       all Mackenzie students and we encourage you to audition and perform
       alongside the best of Mackenzie’s arts scene.
-    image: /assets/img/logo.svg
+    image: /assets/img/java.jpg
 music:
   - name: May Music Nights
     description: Music Night is held in May and showcases the talents of our
       musicians. The concert band, jazz band, klezmer band, choir, soloists,
       small ensembles and music classes will have you celebrating, reflecting
       and dancing as the night progresses. You don’t want to miss this!
-    image: https://loremflickr.com/320/240/trumpet
+    image: /assets/img/music-night.jpg
   - name: Sounds of the Season
     description: Sounds of the Season is the Mackenzie holiday music concert. From
       carols to winter themed pieces this show has got you covered - *from the
@@ -34,7 +34,7 @@ drama:
       Radio Plays, and Creative Solo performances. Also features an in-depth
       documentary look at the making of this year's virtual school production,
       'Much Ado About Zoom Class'!"
-    image: https://loremflickr.com/320/240/trumpet
+    image: /assets/img/drama-night.jpg
   - name: Much Ado About Zoom Class
     description: >-
       When the students in Ms. Leonard's virtual English class begin studying
@@ -50,7 +50,7 @@ drama:
 
 
       Will YOU accept the call?
-    image: /assets/img/logo.svg
+    image: /assets/img/much-ado.jpg
 dance:
   - name: Dance Night
     description: Twice a year at the end of each semester at Mackenzie, our dance
