@@ -48,6 +48,7 @@ collections:
         file: '_data/members.yml'
         fields:
           - label: 'Members'
+            label_singular: 'Member'
             name: 'members'
             widget: 'list'
             fields:
