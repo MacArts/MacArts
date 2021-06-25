@@ -29,6 +29,7 @@ collections:
           name: 'tags',
           widget: 'select',
           multiple: true,
+          required: false,
           options: [
             { label: 'Dance', value: 'dance' },
             { label: 'Music', value: 'music' },
@@ -284,7 +285,6 @@ collections:
             fields:
               - { label: 'Name', name: 'name', widget: 'string' }
               - { label: 'Email', name: 'email', widget: 'string' }
-              - { label: 'Phone', name: 'phone', widget: 'string' }
               - { label: 'Room', name: 'room', widget: 'string' }
       - label: 'Drama'
         name: 'drama'
@@ -312,7 +312,6 @@ collections:
             fields:
               - { label: 'Name', name: 'name', widget: 'string' }
               - { label: 'Email', name: 'email', widget: 'string' }
-              - { label: 'Phone', name: 'phone', widget: 'string' }
               - { label: 'Room', name: 'room', widget: 'string' }
       - label: 'Dance'
         name: 'dance'
@@ -340,7 +339,6 @@ collections:
             fields:
               - { label: 'Name', name: 'name', widget: 'string' }
               - { label: 'Email', name: 'email', widget: 'string' }
-              - { label: 'Phone', name: 'phone', widget: 'string' }
               - { label: 'Room', name: 'room', widget: 'string' }
       - label: 'Visual & Digital Arts'
         name: 'visual-arts'
@@ -368,5 +366,4 @@ collections:
             fields:
               - { label: 'Name', name: 'name', widget: 'string' }
               - { label: 'Email', name: 'email', widget: 'string' }
-              - { label: 'Phone', name: 'phone', widget: 'string' }
               - { label: 'Room', name: 'room', widget: 'string' }

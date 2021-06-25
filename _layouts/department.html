@@ -68,10 +68,6 @@ layout: default
             <i data-feather="mail"></i
             ><a href="mailto:{{ contact.email }}">{{ contact.email }}</a>
           </p>
-          <p>
-            <i data-feather="phone"></i
-            ><a href="tel:{{ contact.phone | phone }}">{{ contact.phone }}</a>
-          </p>
           <p><i data-feather="map-pin"></i>Room {{ contact.room }}</p>
         </div>
         {%- endfor -%}
