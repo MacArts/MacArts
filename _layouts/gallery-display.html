@@ -31,8 +31,12 @@ layout: info
       800: 1
     }
   });
-  
+
   window.onresize = () => {
     gallery.reInit();
   }
+
+  gallery.on(gallery.constants.EVENT_IMAGE_LOAD, () => {
+    gallery.reInit();
+  });
 </script>
