@@ -99,6 +99,16 @@ collections:
             summary: '{{fields.url}}',
             field: { label: "Video URL", name: 'url', widget: 'string' }
           }
+          - {
+            label: 'Thumbnail',
+            name: 'thumbnail',
+            required: false,
+            widget: 'image',
+            allow_multiple: false,
+            media_folder: '{{media_folder}}/dance',
+            hint: 'The image displayed when listing all the galleries',
+            default: '{{media_folder}}/logo.svg'
+          }
       - label: 'Music'
         name: 'music'
         file: '_data/galleries/music.yml'
@@ -134,6 +144,16 @@ collections:
             widget: 'list',
             summary: '{{fields.url}}',
             field: { label: "Video URL", name: 'url', widget: 'string' }
+          }
+          - {
+            label: 'Thumbnail',
+            name: 'thumbnail',
+            required: false,
+            widget: 'image',
+            allow_multiple: false,
+            media_folder: '{{media_folder}}/music',
+            hint: 'The image displayed when listing all the galleries',
+            default: '{{media_folder}}/logo.svg'
           }
       - label: 'Drama'
         name: 'drama'
@@ -171,6 +191,16 @@ collections:
             summary: '{{fields.url}}',
             field: { label: "Video URL", name: 'url', widget: 'string' }
           }
+          - {
+            label: 'Thumbnail',
+            name: 'thumbnail',
+            required: false,
+            widget: 'image',
+            allow_multiple: false,
+            media_folder: '{{media_folder}}/drama',
+            hint: 'The image displayed when listing all the galleries',
+            default: '{{media_folder}}/logo.svg'
+          }
       - label: 'Visual Arts'
         name: 'visual-arts'
         file: '_data/galleries/visual.yml'
@@ -206,6 +236,16 @@ collections:
             widget: 'list',
             summary: '{{fields.url}}',
             field: { label: "Video URL", name: 'url', widget: 'string' }
+          }
+          - {
+            label: 'Thumbnail',
+            name: 'thumbnail',
+            required: false,
+            widget: 'image',
+            allow_multiple: false,
+            media_folder: '{{media_folder}}/visual-arts',
+            hint: 'The image displayed when listing all the galleries',
+            default: '{{media_folder}}/logo.svg'
           }
   - name: 'events'
     label: 'Events'
