@@ -1,6 +1,6 @@
 members:
   - name: Lisa Cohen
-    council: Central
+    council: Staff
     position: Staff and ACL of Arts
     bio: "Lisa Cohen earned her Honours Bachelor of Music Education (with
       Distinction) from Western University in 2008, and her Masters in Teaching
@@ -13,7 +13,7 @@ members:
       being. "
     headshot: /members/ms.-cohen.jpg
   - name: Jennifer Scott-Barnier
-    council: Central
+    council: Staff
     position: Staff
     bio: Jennifer Scott Barnier earned her Bachelor of Music Education from the
       University of Toronto in 1999, and graduated from OISE/UT with a Bachelor
@@ -31,7 +31,7 @@ members:
       performing and visual arts initiatives.
     headshot: /members/msscottbarnier.jpg
   - name: Alexandra Peters
-    council: Central
+    council: Staff
     position: Staff
     bio: Alexandra Peters graduated from Queen's University with a Bachelor of
       Education and received a Bachelor of Fine Arts Degree with a Minor in
@@ -43,7 +43,7 @@ members:
       her students to become life-long learners.
     headshot: /members/ms.-peters.jpeg
   - name: Colin Fallowfield
-    council: Central
+    council: Staff
     position: Staff
     bio: "Colin Fallowfield earned his undergraduate degree from York University in
       2009, with a specialty in Devised Theatre. Before completing his Bachelor
@@ -56,29 +56,27 @@ members:
       equity and social justice in education and for the importance of the arts
       as a mode of creative expression for young people."
     headshot: /members/mr.fallowfield.jpg
-  - name: Alyssa Wang
+  - name: Alexandra Parravano
+    council: Staff
+    position: Staff
+    bio: "Ms. Parravano is a dance teacher at Mackenzie."
+  - name: Ian Lawrence
+    council: Staff
+    position: Staff
+    bio: "Mr. Lawrence is a photography teacher at Mackenzie."
+  - name: Maggie Archer
+    council: Staff
+    position: Staff
+    bio: "Ms. Archer is a visual arts teacher at Mackenzie."
+  - name: Zoe Friedman
     council: Central
-    position: Chair
-    bio: Alyssa Wang is a grade 12 student who has had the magic of art flow
-      throughout her life. Whether it's painting in serenity or having a blast
-      with music, drama and dance performances, she is sure to love every second
-      of it. Her goal is to share this passion with others at MAC through
-      ensuring the Arts Council’s numerous events and initiatives run smoothly.
-      Throughout the past 3 years of serving on the council, she has made
-      lifelong memories of the wonderful arts community and the opportunities it
-      has given her.
-    headshot: /members/c-alyssa.jpg
-  - name: Meghan Hendrickson
-    council: Music
     position: Senior Chair
-    bio: "Meghan Hendrickson is a passionate musician and arts student. She has
-      grown up in the performing arts and loves the stage - and the backstage
-      too! She is always ready to play her trumpet, hit some drums or bust into
-      song. If there’s a performance on stage she is sure to be nearby. Meghan
-      is incredibly proud of the Music and General Arts Department and is
-      grateful for the endless opportunities she has taken part in over her high
-      school years. "
-    headshot: /members/meghan-hendrickson-choir-.jpg
+  - name: Taihan Mobasshir
+    council: Central
+    position: Junior Chair
+  - name: Kailey Cheng
+    council: Central
+    position: Junior Chair
   - name: Hassan Khan
     bio: Hassan Khan’s first exposure to music was in grade 3 steel pan lessons, but
       it wasn’t until the grade 8 talent show performing “Master of the House”
@@ -88,23 +86,18 @@ members:
       After Dark, singing in choir, or playing in concert band, jazz band, and
       klezmer band. He’s also been known to dabble in other arts, including
       acting in Much Ado About Zoom Class and taking dance class.
-    position: Junior Chair
+    position: Senior Chair
     council: Music
     headshot: /members/m-hassan.png
-  - name: Mia Rebelo
+  - name: Zoe Fan-Chiang
+    position: Junior Chair
+    council: Music
+  - name: Morrie Yalowsky
     council: Drama
-    position: Chair
-    bio: "Mia Rebelo has loved theatre and drama her whole life. Whether she is
-      reading Shakespeare plays late at night, performing on stage, or dancing
-      to showtunes in her bedroom, she is always looking for ways to bring
-      theatre into her life. Mia has participated in many youth theatre
-      productions and has performed in many Mackenzie musicals and shows. She
-      has recently delved into script writing, and was elated to have her
-      original play, Much Ado About Zoom Class, performed and produced this past
-      year as Mackenzie’s first online show. Mia was proud to guide drama
-      council through this challenging year, and is planning to major in musical
-      theatre in post secondary. "
-    headshot: /members/miaheadshot.jpg
+    position: Senior Chair
+  - name: Isabella Prencipe
+    council: Drama
+    position: Junior Chair
   - name: Skye Haik
     council: Dance
     position: Co Chair
@@ -119,39 +112,12 @@ members:
       initiatives throughout the years! Skye is so excited to see what the
       Mackenzie Dance Community has planned for the future years to come!\t"
     headshot: /members/d-skye.jpeg
-  - name: Tiffany Tham
+  - name: Zeynep Kurtoglu
     council: Dance
     position: Co Chair
-    bio: Tiffany Tham is a grade 11 student who has a passion for dance and the
-      performing arts. Since the age of four, she has taken classes in many
-      dance forms such as ballet, hip hop, contemporary, jazz and so much more!
-      Throughout her years at Mackenzie, she has spent her time rehearsing and
-      performing in Dance Nights and Culturama. Tiffany is extremely honoured to
-      be given the opportunity to be a part of the Mackenzie Dance and Arts
-      communities.
-    headshot: /members/d-tiffany.jpg
-  - name: Madison Anderson
+  - name: Amaya Ko
     council: Visual Arts
-    position: Co Chair
-    bio: "Madison (or Maddy) Anderson is a grade 12 student who has been drawn to
-      visual arts her entire life. She has been in visual arts classes for most
-      of her school years and it has now become a part of her daily life. She
-      can be mostly found wandering the hallways in school, on zoom meetings, or
-      just taking walks outside. Maddy is very proud of all the hard work
-      everyone in the Visual Arts Council has done this past year and is
-      profoundly grateful for everyone’s dedication to all the initiatives
-      created. She cannot wait to see what amazing new initiatives Visual Arts
-      will do next year!    "
-    headshot: /members/va-maddy.jpg
-  - name: Kelly Vu
+    position: Senior Chair
+  - name: Lily Phan
     council: Visual Arts
-    position: Co Chair
-    bio: "Kelly is a grade 12 student who loves to create any form of visual art as
-      well as sharing artworks for all of Mackenzie to see. Whether it be to ask
-      a simple question or to chat, her door is always open! She can mostly be
-      found in the photography dark room at school, uploading students' artworks
-      on Visual Arts Council’s Instagram account or petting any cats in sight.
-      Kelly is very happy how Visual Arts Council has held up this year despite
-      having all of their events online and hopes that Visual Arts Council gains
-      even more success next year. "
-    headshot: /members/va-kelly.jpg
+    position: Junior Chair
