@@ -3,7 +3,7 @@ layout: info
 permalink: /about/
 title: About Us
 subheading: Meet Your Arts Council
-default_avatar: "/assets/img/members/default.png"
+default_avatar: "/members/default.png"
 ---
 
 <div class="councils">
@@ -40,19 +40,25 @@ default_avatar: "/assets/img/members/default.png"
 </div>
 
 <h2 class="section-title">Meet the Team</h2>
-<div class="listing two">
+<div class="listing">
   {%- for member in site.data.members.members -%}
     <div>
-      <div class="img-wrapper">
-        {%- capture headshot -%}
-          {{ member.headshot | default: page.default_avatar }}
-        {%- endcapture -%}
-        <img src="{{ "/assets/img" | append: headshot | relative_url }}" alt="" class="framed">
+      <div class="img-wrapper small">
+        {% comment %} temporary logic until most headshots are available{% endcomment %}
+        {%- if member.council == "Staff" -%}
+          {%- capture headshot -%}
+            {{ member.headshot | default: page.default_avatar }}
+          {%- endcapture -%}
+        {%- else -%}
+          {%- assign headshot = page.default_avatar -%}
+        {%- endif -%}
+
+        <img src="{{ "/assets/img" | append: headshot | relative_url }}" alt="{{ member.name }}" class="framed">
       </div>
       <div class="info">
         <h2>{{ member.name }}</h2>
-        <h3>{{ member.council }} - {{ member.position }}</h3>
-        <p>{{ member.bio }}</p>
+        <h3>{% if member.council != "Staff" %}{{ member.council }} - {% endif %}{{ member.position }}</h3>
+        {%- if member.council == "Staff" -%}<p>{{ member.bio }}</p>{%- endif -%}
       </div>
     </div>
   {%- endfor -%}
