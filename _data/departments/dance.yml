@@ -19,6 +19,7 @@ gallery:
   image: /assets/img/dance/IMG_10390.JPG
   alt-text: Dance Council
 classwork:
+  show: false
   description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
   image: /music/m4.png
   alt-text: dance
