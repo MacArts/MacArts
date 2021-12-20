@@ -1,8 +1,6 @@
 title: Mackenzie Arts
 description: >-
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  WLMAC Arts Council events and information.
 baseurl: "" # TODO: Remove when migrating to domain
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 copyright: "&copy; 2020 Mackenzie Arts Council."
