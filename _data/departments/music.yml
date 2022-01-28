@@ -19,6 +19,13 @@ classwork:
   description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
   image: /assets/img/music/m2.png
   alt-text: some alt text for the image
+socials:
+  - at: "@wlmac_music"
+    icon: instagram
+    hyperlink: https://www.instagram.com/wlmac_music/
+  - at: "@wlmac_music"
+    icon: instagram
+    hyperlink: https://www.instagram.com/wlmac_music/
 contact:
   - name: Lisa Cohen
     email: lisa.abrams@tdsb.on.ca

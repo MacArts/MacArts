@@ -1,8 +1,22 @@
 <section class="at-a-glance content">
   <div class="title">
-  <h1>{{ include.title }}</h1>
-  <h2>{{ include.subtitle }}</h2>
-</div>
+    <h1>{{ include.title }}</h1>
+    <h2>{{ include.subtitle }}</h2>
+  </div>
+  {%- if include.social_media == true -%}
+  {%- assign dept = site.data.departments[page.tag] -%}
+  <div class="social-media">
+    {%- for social in dept.socials -%}
+      <p>
+        <i data-feather="{{ social.icon }}" class="social-icon"></i>
+        <a href="{{social.hyperlink}}" class="social-at">
+          {{ social.at }}
+        </a>
+      </p>
+    {%- endfor -%}
+  </div>
+  {%- endif -%}
+
   <ul class="post-list">
     {%- assign post_count = 0 -%}
     {%- assign posts = site.posts -%}
