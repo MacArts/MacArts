@@ -4,13 +4,12 @@
   width: 100%;
 
   .content {
-    margin: 0;
+    margin: 0 1rem;
     position: relative;
-  }
 
-  :not(.at-a-glance) .title {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    > p {
+      margin-bottom: 1rem;
+    }
   }
 
   .at-a-glance {
@@ -27,6 +26,10 @@
         font-size: 1.5rem;
       }
     }
+  }
+  .listing > * {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   @include mq($on-laptop) {

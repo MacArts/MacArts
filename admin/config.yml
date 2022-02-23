@@ -307,20 +307,17 @@ collections:
         fields:
           - { label: 'Heading', name: 'heading', widget: 'hidden', default: 'Music' }
           - { label: 'Name', name: 'name', widget: 'hidden', default: 'Music' }
-          - label: 'Gallery'
-            name: 'gallery'
-            widget: 'object'
+          - { label: 'About', name: 'description', widget: 'text' }
+          - label: 'Nodes'
+            name: 'nodes'
+            widget: 'list'
             fields:
-              - { label: 'Description', name: 'description', widget: 'text' }
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'Caption or Description', name: 'description', widget: 'string' }
+              - { label: 'Page', name: 'link', widget: 'string' }
+              - { label: 'Button Label', name: 'button_label', widget: 'string' }
               - { label: 'Image', name: 'image', widget: 'image', media_folder: '{{media_folder}}/music' }
-              - { label: 'Alt Text', name: 'alt-text', widget: 'string' }
-          - label: 'Classwork'
-            name: 'classwork'
-            widget: 'object'
-            fields:
-              - { label: 'Description', name: 'description', widget: 'text' }
-              - { label: 'Image', name: 'image', widget: 'image', media_folder: '{{media_folder}}/music' }
-              - { label: 'Alt Text', name: 'alt-text', widget: 'string' }
+              - { label: 'Hide?', name: 'hide', widget: 'boolean' }
           - label: 'Contact'
             name: 'contact'
             widget: 'list'
@@ -334,20 +331,17 @@ collections:
         fields:
           - { label: 'Heading', name: 'heading', widget: 'hidden', default: 'Drama' }
           - { label: 'Name', name: 'name', widget: 'hidden', default: 'Drama' }
-          - label: 'Gallery'
-            name: 'gallery'
-            widget: 'object'
+          - { label: 'About', name: 'description', widget: 'text' }
+          - label: 'Nodes'
+            name: 'nodes'
+            widget: 'list'
             fields:
-              - { label: 'Description', name: 'description', widget: 'text' }
-              - { label: 'Image', name: 'image', widget: 'image', media_folder: '{{media_folder}}/music' }
-              - { label: 'Alt Text', name: 'alt-text', widget: 'string' }
-          - label: 'Classwork'
-            name: 'classwork'
-            widget: 'object'
-            fields:
-              - { label: 'Description', name: 'description', widget: 'text' }
-              - { label: 'Image', name: 'image', widget: 'image', media_folder: '{{media_folder}}/music' }
-              - { label: 'Alt Text', name: 'alt-text', widget: 'string' }
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'Caption or Description', name: 'description', widget: 'string' }
+              - { label: 'Page', name: 'link', widget: 'string' }
+              - { label: 'Button Label', name: 'button_label', widget: 'string' }
+              - { label: 'Image', name: 'image', widget: 'image', media_folder: '{{media_folder}}/drama' }
+              - { label: 'Hide?', name: 'hide', widget: 'boolean' }
           - label: 'Contact'
             name: 'contact'
             widget: 'list'
@@ -361,20 +355,17 @@ collections:
         fields:
           - { label: 'Heading', name: 'heading', widget: 'hidden', default: 'Dance' }
           - { label: 'Name', name: 'name', widget: 'hidden', default: 'Dance' }
-          - label: 'Gallery'
-            name: 'gallery'
-            widget: 'object'
+          - { label: 'About', name: 'description', widget: 'text' }
+          - label: 'Nodes'
+            name: 'nodes'
+            widget: 'list'
             fields:
-              - { label: 'Description', name: 'description', widget: 'text' }
-              - { label: 'Image', name: 'image', widget: 'image', media_folder: '{{media_folder}}/music' }
-              - { label: 'Alt Text', name: 'alt-text', widget: 'string' }
-          - label: 'Classwork'
-            name: 'classwork'
-            widget: 'object'
-            fields:
-              - { label: 'Description', name: 'description', widget: 'text' }
-              - { label: 'Image', name: 'image', widget: 'image', media_folder: '{{media_folder}}/music' }
-              - { label: 'Alt Text', name: 'alt-text', widget: 'string' }
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'Caption or Description', name: 'description', widget: 'string' }
+              - { label: 'Page', name: 'link', widget: 'string' }
+              - { label: 'Button Label', name: 'button_label', widget: 'string' }
+              - { label: 'Image', name: 'image', widget: 'image', media_folder: '{{media_folder}}/dance' }
+              - { label: 'Hide?', name: 'hide', widget: 'boolean' }
           - label: 'Contact'
             name: 'contact'
             widget: 'list'
@@ -388,20 +379,17 @@ collections:
         fields:
           - { label: 'Heading', name: 'heading', widget: 'hidden', default: 'Visual & Digital Arts' }
           - { label: 'Name', name: 'name', widget: 'hidden', default: 'Visual Arts' }
-          - label: 'Gallery'
-            name: 'gallery'
-            widget: 'object'
+          - { label: 'About', name: 'description', widget: 'text' }
+          - label: 'Nodes'
+            name: 'nodes'
+            widget: 'list'
             fields:
-              - { label: 'Description', name: 'description', widget: 'text' }
-              - { label: 'Image', name: 'image', widget: 'image', media_folder: '{{media_folder}}/music' }
-              - { label: 'Alt Text', name: 'alt-text', widget: 'string' }
-          - label: 'Classwork'
-            name: 'classwork'
-            widget: 'object'
-            fields:
-              - { label: 'Description', name: 'description', widget: 'text' }
-              - { label: 'Image', name: 'image', widget: 'image', media_folder: '{{media_folder}}/music' }
-              - { label: 'Alt Text', name: 'alt-text', widget: 'string' }
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'Caption or Description', name: 'description', widget: 'string' }
+              - { label: 'Page', name: 'link', widget: 'string' }
+              - { label: 'Button Label', name: 'button_label', widget: 'string' }
+              - { label: 'Image', name: 'image', widget: 'image', media_folder: '{{media_folder}}/visual-arts' }
+              - { label: 'Hide?', name: 'hide', widget: 'boolean' }
           - label: 'Contact'
             name: 'contact'
             widget: 'list'

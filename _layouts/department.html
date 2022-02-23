@@ -16,47 +16,24 @@ layout: default
 
     {%- assign dept = site.data.departments[page.tag] -%}
 
+    <p>{{ dept.description }}</p>
+
     <div class="listing">
-      {%- if dept.gallery.show == nil or dept.gallery.show -%}
-      <div>
-        <div class="img-wrapper">
-          <img
-            src="{{ dept.gallery.image | default: '/assets/img/logo.svg' }}"
-            alt="{{ dept.gallery.alt-text | default: '' }}"
-            class="framed"
-          />
+      {%- assign nodes = dept.nodes|where:"hide",false -%}
+      {% for node in dept.nodes %}
+        <div>
+          <div class="img-wrapper">
+            <img class="framed"
+              src="{{ node.image | default: '/assets/img/logo.svg' }}"
+              alt="{{ node.label | default: '' }}" />
+          </div>
+          <div class="info">
+            <h2>{{ node.title }}</h2>
+            <p>{{ node.description }}</p>
+            <a class="button-large"href="{{ node.link }}">{{ node.button_label }}</a>
+          </div>
         </div>
-        <div class="info">
-          <h2>{{ dept.name }} Showcase Gallery</h2>
-          <p>{{ dept.gallery.description }}</p>
-          <a
-            href="{{ '/gallery/' | append: page.tag | relative_url }}"
-            class="button-large"
-            >View Gallery</a
-          >
-        </div>
-      </div>
-      {%- endif -%} 
-      {%- if dept.classwork.show == nil or dept.classwork.show -%}
-      <div>
-        <div class="img-wrapper">
-          <img
-            src="{{ dept.classwork.image | default: '/assets/img/logo.svg' }}"
-            alt="{{ dep.classwork.alt-text | default: '' }}"
-            class="framed"
-          />
-        </div>
-        <div class="info">
-          <h2>Classwork Showcase</h2>
-          <p>{{ dept.classwork.description }}</p>
-          <a
-            href="{{ '/classwork/' | append: page.tag | relative_url }}"
-            class="button-large"
-            >View Classwork</a
-          >
-        </div>
-      </div>
-      {%- endif -%}
+      {% endfor %}
     </div>
     <br />
     <div id="contact">
@@ -66,8 +43,7 @@ layout: default
         <div>
           <h3 class="h2">{{ contact.name }}</h3>
           <p>
-            <i data-feather="mail"></i>
-            <a href="mailto:{{ contact.email }}">{{ contact.email }}</a>
+            <i data-feather="mail"></i><a href="mailto:{{ contact.email }}">{{ contact.email }}</a>
           </p>
           <p><i data-feather="map-pin"></i>Room {{ contact.room }}</p>
         </div>

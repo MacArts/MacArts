@@ -1,24 +1,28 @@
 heading: Music
 name: Music
-gallery:
-  description: >-
-    Music Council is a group of students that represent the music department of
-    Mackenzie. We help organize shows and help coordinate our ensembles and
-    other initiatives. This year we ran virtual performances and rehearsals as
-    well as mentorship programs for our junior students. We have many ensembles
-    you can join. For beginner students we welcome you to the Junior Band and
-    Choir and for our more experienced players you are welcome to the Wind
-    Ensemble, Jazz Band, Choir and to our Klezmer Band by invitation. Let’s make
-    music and come together. 
+description: >-
+  Music Council is a group of students that represent the music department of
+  Mackenzie. We help organize shows and help coordinate our ensembles and
+  other initiatives. This year we ran virtual performances and rehearsals as
+  well as mentorship programs for our junior students. We have many ensembles
+  you can join. For beginner students we welcome you to the Junior Band and
+  Choir and for our more experienced players you are welcome to the Wind
+  Ensemble, Jazz Band, Choir and to our Klezmer Band by invitation. Let’s make
+  music and come together. 
 
-    Instagram: wlmac_music
-  image: /assets/img/music/Copy of IMG_8918.JPG
-  alt-text: Music Council
-classwork:
-  show: false
-  description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-  image: /assets/img/music/m2.png
-  alt-text: some alt text for the image
+nodes:
+  - title: Gallery
+    hide: false
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+    link: /gallery/music/
+    button_label: View Gallery
+    image: /assets/img/music/Copy of IMG_8918.JPG
+  - title: Classwork
+    hide: false
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+    link: /classwork/music/
+    button_label: Go to Classwork
+    image: /assets/img/classwork/music/m3.png
 socials:
   - at: "@wlmac_music"
     icon: instagram
