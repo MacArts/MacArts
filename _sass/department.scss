@@ -4,15 +4,15 @@
   width: 100%;
 
   .content {
-    margin: 0;
+    margin: auto;
     position: relative;
+    padding: 0 2.5rem;
   }
 
   :not(.at-a-glance) .title {
     margin-left: 1rem;
     margin-right: 1rem;
   }
-
   .at-a-glance {
     background-color: lighten($blue, 12%);
     padding: 1rem;
@@ -29,7 +29,7 @@
     }
   }
 
-  @include mq($on-laptop) {
+  @include mq(1200px) {
     .listing {
       @include columnize-list;
     }
@@ -38,16 +38,18 @@
     }
   }
 
-  @include mq($home-breakpoint) {
+  @include mq($on-laptop) {
+    flex-direction: column;
     justify-content: revert;
     align-items: center;
 
+    .content {
+      margin-bottom: 1rem;
+    }
     .at-a-glance {
+      order: 2;
       margin: 1rem 0;
-
-      .title h1 {
-        font-size: 2rem;
-      }
+      @include content-width;
     }
   }
 }
@@ -94,7 +96,7 @@
       vertical-align: text-top;
     }
 
-    @include mq($home-breakpoint) {
+    @include mq($on-laptop) {
       flex-flow: column nowrap;
 
       > div {
