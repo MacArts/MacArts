@@ -44,19 +44,28 @@ $home-breakpoint: $on-tablet;
   }
 
   .social-media {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    vertical-align: middle;
     font-size: 16px;
     padding-bottom: 1rem;
     margin-bottom: 1.5rem;
     text-align: center;
     border-bottom: 2px solid lighten($charcoal, 60%);
 
-    p {
+    span {
       padding-bottom: 0.5rem;
+      vertical-align: middle;
     }
+
     .social-icon {
-      width: 20px;
-      height: 20px;
+      vertical-align: middle;
+      width: 25px;
+      height: 25px;
     }
+
     .social-at {
       transform: translate(-50%, -50%);
       padding-left: 10px;
