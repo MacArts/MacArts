@@ -17,7 +17,7 @@ phone_delimiter: "."
 nav_links:
   Events: /events/
   Calendar: /calendar/
-  Blog: /blog/
+  Announcements: /announcements/
   About: /about/
   Gallery: /gallery/
   Departments:
