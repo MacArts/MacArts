@@ -15,11 +15,12 @@ phone_ext_marker: "ext."
 phone_delimiter: "."
 
 nav_links:
-  Events: /events/
+  Events:
+    Upcoming: /events/
+    Past: /events/
   Calendar: /calendar/
   Blog: /blog/
-  About: /about/
-  Gallery: /gallery/
+  Councils: /about/
   Departments:
     Music: /departments/music/
     Drama: /departments/drama/
