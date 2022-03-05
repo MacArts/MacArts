@@ -47,17 +47,17 @@ $home-breakpoint: $on-tablet;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    vertical-align: middle;
     font-size: 16px;
     padding-bottom: 1rem;
     margin-bottom: 1.5rem;
-    text-align: center;
     border-bottom: 2px solid lighten($charcoal, 60%);
 
     span {
       padding-bottom: 0.5rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
       vertical-align: middle;
+      flex-basis: 40%;
     }
 
     .social-icon {
