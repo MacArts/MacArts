@@ -7,12 +7,12 @@
   {%- assign dept = site.data.departments[page.tag] -%}
   <div class="social-media">
     {%- for social in dept.socials -%}
-      <p>
+      <span>
         <i data-feather="{{ social.icon }}" class="social-icon"></i>
         <a href="{{social.hyperlink}}" class="social-at">
           {{ social.at }}
         </a>
-      </p>
+      </span>
     {%- endfor -%}
   </div>
   {%- endif -%}
