@@ -5,6 +5,12 @@ $home-breakpoint: $on-tablet;
   flex: 0 0 20%;
   order: -1;
 
+  .view-more {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
   .department & {
     width: 30%;
     flex: 0 0 30%;
