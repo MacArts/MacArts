@@ -31,15 +31,6 @@ collections:
   departments:
     output: true
     permalink: /departments/:name/
-  event_pages:
-    output: true
-    permalink: /events/:name/
-    order:
-      - central-arts-council.html
-      - music.html
-      - drama.html
-      - dance.html
-      - visual-arts.html
   galleries:
     output: true
     permalink: /gallery/:name/
@@ -55,10 +46,6 @@ defaults:
     values:
       layout: "department"
       subheading: "Department Page"
-  - scope:
-      path: "_event_pages"
-    values:
-      heading: "Events"
   - scope:
       path: "_galleries"
     values:

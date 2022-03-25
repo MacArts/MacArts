@@ -183,55 +183,6 @@ collections:
             hint: 'The image displayed when listing all the galleries',
             default: '{{media_folder}}/logo.svg'
           }
-  - name: 'events'
-    label: 'Events'
-    editor:
-      preview: false
-    files:
-      - label: 'Events'
-        name: 'events'
-        file: '_data/events.yml'
-        fields:
-          - label: 'Central Arts Council'
-            label_singular: 'Event'
-            name: 'central'
-            widget: 'list'
-            fields:
-              - { label: 'Name', name: 'name', widget: 'string' }
-              - { label: 'Description', name: 'description', widget: 'markdown' }
-              - { label: 'Image', name: 'image', widget: 'image', allow_multiple: false }
-          - label: 'Music'
-            label_singular: 'Event'
-            name: 'music'
-            widget: 'list'
-            fields:
-              - { label: 'Name', name: 'name', widget: 'string' }
-              - { label: 'Description', name: 'description', widget: 'markdown' }
-              - { label: 'Image', name: 'image', widget: 'image', allow_multiple: false }
-          - label: 'Drama'
-            label_singular: 'Event'
-            name: 'drama'
-            widget: 'list'
-            fields:
-              - { label: 'Name', name: 'name', widget: 'string' }
-              - { label: 'Description', name: 'description', widget: 'markdown' }
-              - { label: 'Image', name: 'image', widget: 'image', allow_multiple: false }
-          - label: 'Dance'
-            label_singular: 'Event'
-            name: 'dance'
-            widget: 'list'
-            fields:
-              - { label: 'Name', name: 'name', widget: 'string' }
-              - { label: 'Description', name: 'description', widget: 'markdown' }
-              - { label: 'Image', name: 'image', widget: 'image', allow_multiple: false }
-          - label: 'Visual Arts'
-            label_singular: 'Event'
-            name: 'visual-arts'
-            widget: 'list'
-            fields:
-              - { label: 'Name', name: 'name', widget: 'string' }
-              - { label: 'Description', name: 'description', widget: 'markdown' }
-              - { label: 'Image', name: 'image', widget: 'image', allow_multiple: false }
   - name: 'departments'
     label: 'Departments'
     editor:
