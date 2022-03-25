@@ -40,14 +40,6 @@ collections:
       - drama.html
       - dance.html
       - visual-arts.html
-  galleries:
-    output: true
-    permalink: /gallery/:name/
-    order:
-      - music.md
-      - drama.md
-      - dance.md
-      - visual-arts.md
 
 defaults:
   - scope:
@@ -59,11 +51,6 @@ defaults:
       path: "_event_pages"
     values:
       heading: "Events"
-  - scope:
-      path: "_galleries"
-    values:
-      layout: "gallery-display"
-      heading: "Gallery"
   - scope:
       path: "_posts"
     values:
