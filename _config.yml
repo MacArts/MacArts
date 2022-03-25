@@ -31,14 +31,6 @@ collections:
   departments:
     output: true
     permalink: /departments/:name/
-  galleries:
-    output: true
-    permalink: /gallery/:name/
-    order:
-      - music.md
-      - drama.md
-      - dance.md
-      - visual-arts.md
 
 defaults:
   - scope:
@@ -46,11 +38,6 @@ defaults:
     values:
       layout: "department"
       subheading: "Department Page"
-  - scope:
-      path: "_galleries"
-    values:
-      layout: "gallery-display"
-      heading: "Gallery"
   - scope:
       path: "_posts"
     values:
