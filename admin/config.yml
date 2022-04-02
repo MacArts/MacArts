@@ -93,6 +93,14 @@ collections:
         }
       - { label: 'Recording / YouTube Video Link', name: 'video', widget: 'string', required: false, hint: 'e.g. https://www.youtube.com/watch?v=1FZSQZZm73U' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+      - {
+          label: 'Gallery',
+          name: 'media',
+          widget: 'image', 
+          required: false,
+          allow_multiple: true,
+          media_folder: '{{media_folder}}/events/{{filename}}'
+        }
   - name: 'departments'
     label: 'Departments'
     editor:

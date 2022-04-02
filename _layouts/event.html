@@ -15,4 +15,11 @@ layout: default
 	{%- endcapture -%}
 	<iframe class="framed mw-100" width="560" height="315" src="{{- yt_embed -}}" title="{{- page.title }} on YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 {%- endif -%}
+
+<h2>Gallery</h2>
+<!-- <p>Have a photo from this event that you'd love to see featured? Send it over to us via this form!</p> -->
+
+{%- assign basename = page.path | split: "/" | shift | split: "." | first | uri_escape | replace: '[%22','' -%}
+{%- assign gallery_media = site.static_files | where_exp: "img", "img.path contains basename" -%}
+{% include gallery.html %}
 </div>
