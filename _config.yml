@@ -10,6 +10,9 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
+# Display posts / events with a future date
+future: true
+
 # For the phone filter plugin
 phone_ext_marker: "ext."
 phone_delimiter: "."
@@ -17,7 +20,7 @@ phone_delimiter: "."
 nav_links:
   Events:
     Upcoming: /events/
-    Past: /events/
+    Past: "/events/#past-events"
   Calendar: /calendar/
   Announcements: /announcements/
   Councils: /about/
@@ -31,6 +34,9 @@ collections:
   departments:
     output: true
     permalink: /departments/:name/
+  events:
+    output: true
+    permalink: /events/:year/:month/:slug/
 
 defaults:
   - scope:
@@ -42,6 +48,11 @@ defaults:
       path: "_posts"
     values:
       layout: "post"
+  - scope:
+      path: "_events"
+    values:
+      layout: "event"
+      image: "/assets/img/logo.svg"
 
   # For display pages
   - scope:

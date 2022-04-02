@@ -45,6 +45,13 @@ a {
   color: darken($blue, 50%);
 }
 
+p {
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+}
+
+
 $border-size: 1rem;
 .framed {
   $shadow-size: 15px;
@@ -57,6 +64,10 @@ $border-size: 1rem;
 @mixin content-width {
   width: unquote("min(85%, 1100px)");
   margin: 0 auto;
+}
+
+.mw-100 {
+  max-width: 100%;
 }
 
 .content {

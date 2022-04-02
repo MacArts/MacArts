@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<div class="content">
+<div class="list-group__list standalone">
+	{% assign event = page %}
+	{%- include event-node.html content=page.content -%}
+</div>
+
+{%- if page.video -%}
+	<h2>Recording</h2>
+	{%- capture yt_embed -%}
+		{{- page.video | replace: "watch?v=", "embed/" -}}
+	{%- endcapture -%}
+	<iframe class="framed mw-100" width="560" height="315" src="{{- yt_embed -}}" title="{{- page.title }} on YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{%- endif -%}
+</div>

@@ -1,0 +1,10 @@
+- name: This Week
+  expr: "evt.date >= today and evt.date < one_week"
+- name: Next Week
+  expr: "evt.date >= one_week and evt.date < two_weeks"
+- name: This Month
+  expr: "evt.date >= two_weeks and evt.date < one_month"
+- name: Upcoming Events
+  expr: "evt.date >= one_month"
+- name: Past Events
+  expr: "evt.date < today"
