@@ -17,7 +17,11 @@ phone_delimiter: "."
 nav_links:
   Events: /events/
   Calendar: /calendar/
-  Announcements: /announcements/
+  Announcements:
+    Music: /announcements/music/
+    Drama: /announcements/drama/
+    Dance: /announcements/dance/
+    Visual & Digital Arts: /announcements/visual-arts/
   About: /about/
   Gallery: /gallery/
   Departments:
@@ -27,6 +31,9 @@ nav_links:
     Visual & Digital Arts: /departments/visual-arts/
 
 collections:
+  announcements:
+    output: true
+    permalink: /announcements/:name/
   departments:
     output: true
     permalink: /departments/:name/
@@ -57,6 +64,12 @@ collections:
       - visual-arts.md
 
 defaults:
+  - scope:
+      path: "_announcements"
+    values:
+      title: Announcements
+      layout: "announcements"
+      subheading: "Announcements Page"
   - scope:
       path: "_departments"
     values:
