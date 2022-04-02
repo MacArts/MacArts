@@ -5,61 +5,65 @@ title: About Us
 subheading: Meet Your Arts Council
 default_avatar: "/members/default.png"
 ---
-
+<div class="year-switcher">
+</div>
 <div class="councils">
-  <li class="council">
-    <h3 class="council__name">Central Arts Council</h3>
-    <p class="council__description">
-      Central Arts Council acts like the glue between the four subject councils: Music, Drama, Dance and Visual Arts. We help consolidate the different events that each council does by confirming dates, handling advertising aspects and backstage components. We also have meetings with the chairs of the subject councils to flesh out upcoming initiatives, brainstorm new events and reflect upon past events. Central Arts Council brings Mackenzie Arts in Bloom, the yearly application forms and the Virtual Awards Ceremony.
-    </p>
-  </li>
-  <li class="council">
-    <h3 class="council__name">Music Council</h3>
-    <p class="council__description">
-      Music Council is a group of students that represent the music department of Mackenzie. We help organize shows and help coordinate our ensembles and other initiatives. This year we ran virtual performances and rehearsals as well as mentorship programs for our junior students. We have many ensembles you can join. For beginner students we welcome you to the Junior Band and Choir and for our more experienced players you are welcome to the Wind Ensemble, Jazz Band, Choir and to our Klezmer Band by invitation. Let’s make music and come together. 
-    </p>
-  </li>
-  <li class="council">
-    <h3 class="council__name">Drama Council</h3>
-    <p class="council__description">
-      Drama Council is a team of Mackenzie students with a passion for performance and a flair for the dramatic. Drama council handles all drama related events at Mackenzie, and lets anyone get involved in productions— even if they don’t want to be on stage! This year, drama council produced Mackenzie’s first ever virtual play: Much Ado About Zoom Class, a student written and run production that premiered on YouTube to over 1000 viewers! Drama council handled everything behind the scenes, working on editing, props, costumes, graphics, and more! If you love theatre and want to be a part of future productions in any capacity, drama council is the place for you. Come and join us to put on plays and find your theatre family!
-    </p>
-  </li>
-  <li class="council">
-    <h3 class="council__name">Dance Council</h3>
-    <p class="council__description">
-      Dance Council is a group of motivated students with a passion for dance!  We strive to bring a stronger dance presence in the Mackenzie community. Organising events that help engage students to show off their dance skills such as our holiday TikTok dance event has been a highlight! Dance Council is a place where all students can come together and express their shared love for the art and we welcome any and all students! Dance is a way for students to express themselves in ways that words cannot and we are always working on new exciting initiatives such as dance workshops and fun events. Through the strong efforts of our entire council, we are constantly working on finding new and creative ways and events to help foster the dance spirit at Mackenzie! 
-    </p>
-  </li>
-  <li class="council">
-    <h3 class="council__name">Visual Arts Council</h3>
-    <p class="council__description">
-      Visual Arts Council strives to promote the visual arts that have been created by Mackenzie's talented students! Despite having remote schooling for most of the year, Visual Arts Council was still able to create events for all of MAC to enjoy! This year we had The Monthly Theme Artwork Submissions, Valentines Themed Food Week, Paint Night during Arts in Bloom and our year long mural project. We would love to hear from you if you have any questions, concerns, comments, cat pictures or just to chat!
-    </p>
-  </li>
-</div>
+	<div class="council_tab_buttons">
+    {%- for council in site.data.members.councils -%}
+      <div class="title" type="button" onclick="{{ council.id }}()"><p>{{council.btn}}</p></div>
+    {%- endfor -%}			    
+	</div>
+	{%- for council in site.data.members.councils -%}
+	<div class="council_info_box" id="{{ council.id }}"> {% comment %} council id for javascripting the tabs {% endcomment %}
+		<h2 class="section-title">{{ council.name }}</h2>
+		<p class="councils__description">{{council.description}}</p>
 
-<h2 class="section-title">Meet the Team</h2>
-<div class="listing">
-  {%- for member in site.data.members.members -%}
-    <div>
-      <div class="img-wrapper small">
-        {% comment %} temporary logic until most headshots are available{% endcomment %}
-        {%- if member.council == "Staff" -%}
-          {%- capture headshot -%}
-            {{ member.headshot | default: page.default_avatar }}
-          {%- endcapture -%}
-        {%- else -%}
-          {%- assign headshot = page.default_avatar -%}
-        {%- endif -%}
-
-        <img src="{{ "/assets/img" | append: headshot | relative_url }}" alt="{{ member.name }}" class="framed">
-      </div>
-      <div class="info">
-        <h2>{{ member.name }}</h2>
-        <h3>{% if member.council != "Staff" %}{{ member.council }} - {% endif %}{{ member.position }}</h3>
-        {%- if member.council == "Staff" -%}<p>{{ member.bio }}</p>{%- endif -%}
-      </div>
+		<div class="council-chairs">
+  		{%- for chair in council.chairs -%}
+  			<div class="council-chair-box">    
+          <div class="council-chair-info-container">
+            {%- capture headshot -%}
+              {{ chair.headshot | default: page.default_avatar }}
+            {%- endcapture -%}
+            <img src="{{ "/assets/img" | append: headshot | relative_url }}" alt="{{ chair.name }}" class="framed">
+            <div class="council-chair-info">
+      				<p class="council-chair__name">{{chair.name}}</p>
+      				<p class="council-chair__position">{{chair.position}}</p>
+            </div>
+          </div>
+  				<p class="council-chair__description">{{chair.description}}</p>
+  			</div>
+  		{%- endfor -%}			
     </div>
-  {%- endfor -%}
+    <h3 class="council-members-title">Members:</h3>
+    {% assign calc1 = council.members.size | divided_by: 6 | plus: 1 %}
+    {%- for i in (1..calc1) -%}
+      <div class="council-member-row">
+        {%- for memberidx in (1..6) -%}
+          <p class="member-name">
+          {% assign calc2 = i | minus: 1 | times: 6 | plus: memberidx | minus: 1 %} 
+          {%- if council.members[calc2] != null -%}
+            {{council.members[calc2]}}
+          {%- endif -%}
+          </p>
+        {%- endfor -%}
+      </div>
+    {%- endfor -%}
+  </div>
+	{%- endfor -%}
 </div>
+<script>
+  {%- for council in site.data.members.councils -%}
+    function {{council.id}}() {
+      {%- for councilin in site.data.members.councils -%}
+        {%- if councilin == council -%}
+          document.getElementById("{{councilin.id}}").style.display = "block";
+        {%- else -%}
+          document.getElementById("{{councilin.id}}").style.display = "none";    
+        {%- endif -%}
+      {%- endfor -%}			
+    }
+  {%- endfor -%}	
+  window.document.onload = central();
+</script>
+{% comment %} TODO: fix the font sizes/spaces, fix img, add fixed size for info box?, button hover selected stuff, make it work on mobile [buttons, chair pic/bio, memberlist], use color var instead (excuse my spaghetti code) {% endcomment %}

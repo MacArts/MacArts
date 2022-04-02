@@ -2,24 +2,108 @@
   list-style: none;
   margin: 0;
   padding: 0;
-
-  .council {
-    margin-bottom: 1.5rem;
-
-    &__name {
-      font-weight: bold;
-      font-size: 1.25em;
+  &__description{
+    font-size: 1.1em;
+    letter-spacing: 0.5px;    
+    padding: 0.75em 0;
+  }
+  .council_tab_buttons{
+    display: flex;
+    margin: 0.5em 0;
+    .title{
+      margin-left: 0.5em;
+      margin-bottom: 0.05em;
+      padding: 0.8em 0;
+      background-color: #EDEDED;
+      border: $charcoal solid 0.1em; 
+      border-radius: 0.75em; 
+      width: 100%;
+      p {
+        font-weight: bold;
+        font-size: 1.5em;
+        color: $charcoal;
+      }
     }
-    &__description {
-      font-size: 1.1em;
-      letter-spacing: 0.5px;
+    .title:first-child{
+      margin-left: 0;
+    }
+    .title:hover{
+      background-color: #E3E3E3;
+    }
+  }
+  .council_info_box{
+    background-color: #EDEDED;
+    border: $charcoal solid 0.1em;
+    border-radius: 1.25em;
+    margin-bottom: 2em;
+    padding: 2.5em 3.5em; 
+    
+    .council-chairs{
+      display: flex;
+      margin: 1em 0;
+      
+      .council-chair {
+    
+        &__name {
+          font-weight: bold;
+          font-size: 1.5em;
+          line-height: 1em;
+          margin-bottom: 0.1em;
+        }
+        &__position {
+          font-size: 1.25em;
+        }    
+        &__description {
+          font-size: 1.1em;
+          letter-spacing: 0.5px;
+          margin: 0.5em 0;
+        }
+      }
+      .council-chair-box{
+        flex: 1;
+        margin-left: 1.5em;        
+        /*border: 2px solid yellow;*/
+        .council-chair-info-container{
+          display: flex;
+          .council-chair-info{
+            margin-left: 0.75em;
+            align-self: flex-end;            
+          }
+          img.framed {
+            width: 10em;
+            height: 10em;
+              $shadow-size: 7px;
+              $border-size: 7px;
+              border: $border-size solid $charcoal;
+              box-shadow: -$shadow-size $shadow-size $blue;
+              margin-left: $shadow-size;
+              margin-bottom: $shadow-size;       
+          }
+        }
+        .council-chair-info-container:first-child{
+          margin-left:0;
+        }
+      }
+      .council-chair-box:first-child{
+        margin-left: 0;
+      }
+    }
+    .council-members-title{
+      padding-bottom: 0.2em;
+      font-size: 1.5em;
+    }
+    .council-member-row{
+      display: flex;
+      .member-name{
+        width:100%;
+        padding-bottom: 0.1em;
+      }
     }
   }
 }
-
 .section-title {
   text-align: center;
-  font-size: 3em;
+  font-size: 2em;
   font-weight: bold;
-  margin: 2rem 0;
+  margin-bottom: 0.5rem; 
 }
