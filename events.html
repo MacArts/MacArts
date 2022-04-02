@@ -12,6 +12,18 @@ title: Events
 
 <br>
 
+{% comment %} todo: remove hardcoding {% endcomment %}
+{% comment %} 
+<select class="dropdown--blue" id="area-filter">
+  <option value="all" selected>All Events</option>
+  <option value="music">Music</option>
+  <option value="drama">Drama</option>
+  <option value="dance">Dance</option>
+  <option value="visual-arts">Visual & Digital Arts</option>
+  <option value="central-arts">Central Arts</option>
+</select>
+{% endcomment %}
+
 {% for filter in site.data.event_timeline %}
   {%- assign filtered_events = site.events | where_exp: "evt", filter.expr  -%}
   {% if filtered_events.size > 0 %}

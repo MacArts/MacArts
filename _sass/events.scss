@@ -5,6 +5,23 @@ $underline-colour: rgba(lighten($charcoal, 62%), 0.7);
   padding-bottom: 0.5rem;
 }
 
+.dropdown--blue {
+  padding: 7px;
+  background-color: #7fb2df;
+  color: white;
+  font-family: "Lemon Milk", sans-serif;
+  font-weight: 300;
+  border: none;
+  border-radius: 3px;
+  float: right;
+
+  option {
+    font-family: "Lemon Milk", sans-serif;
+    background-color: white;
+    color: black;
+  }
+}
+
 .event {
   &__title {
     font-size: 2.5rem;
