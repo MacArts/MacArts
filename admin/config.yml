@@ -1,4 +1,4 @@
-backend:`
+backend:
   name: git-gateway
   branch: main
 media_folder: '/assets/img'
@@ -339,7 +339,7 @@ collections:
             widget: 'object'
             fields:
               - { label: 'Description', name: 'description', widget: 'text' }
-              - { label: 'Image', name: 'image', widget: 'image', media_folder: '{{media_folder}}/music' }
+              - { label: 'Image', name: 'image', widget: 'image', media_folder: '{{media_folder}}/visual-arts' }
               - { label: 'Alt Text', name: 'alt-text', widget: 'string' }
           - label: 'Classwork'
             name: 'classwork'
@@ -366,7 +366,7 @@ collections:
             widget: 'object'
             fields:
               - { label: 'Description', name: 'description', widget: 'text' }
-              - { label: 'Image', name: 'image', widget: 'image', media_folder: '{{media_folder}}/music' }
+              - { label: 'Image', name: 'image', widget: 'image', media_folder: '{{media_folder}}/dance' }
               - { label: 'Alt Text', name: 'alt-text', widget: 'string' }
           - label: 'Classwork'
             name: 'classwork'
@@ -393,7 +393,7 @@ collections:
             widget: 'object'
             fields:
               - { label: 'Description', name: 'description', widget: 'text' }
-              - { label: 'Image', name: 'image', widget: 'image', media_folder: '{{media_folder}}/music' }
+              - { label: 'Image', name: 'image', widget: 'image', media_folder: '{{media_folder}}/drama' }
               - { label: 'Alt Text', name: 'alt-text', widget: 'string' }
           - label: 'Classwork'
             name: 'classwork'
