@@ -18,6 +18,13 @@ classwork:
   description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
   alt-text: art
   image: /music/m4.png
+socials:
+  - at: "instagram"
+    icon: instagram
+    hyperlink: https://www.instagram.com/wlmac.visualartscouncil/
+  - at: "linktree"
+    icon: link-2
+    hyperlink: https://www.linktr.ee/visualartscouncil/
 contact:
   - name: Lisa Cohen
     email: lisa.abrams@tdsb.on.ca

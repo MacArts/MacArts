@@ -19,6 +19,16 @@ classwork:
   description: lorem ipsum
   image: /music/m4.png
   alt-text: drama
+socials:
+  - at: "instagram"
+    icon: instagram
+    hyperlink: https://www.instagram.com/wlmac.dramacouncil/
+  - at: "youtube"
+    icon: youtube
+    hyperlink: https://www.youtube.com/c/WLMackenzieCIArtsDept/
+  - at: "linktree"
+    icon: link-2
+    hyperlink: https://www.linktr.ee/wlmac.drama/
 contact:
   - name: Colin Fallowfield
     email: colin.fallowfield@tdsb.on.ca

@@ -23,6 +23,13 @@ classwork:
   description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
   image: /music/m4.png
   alt-text: dance
+socials:
+  - at: "instagram"
+    icon: instagram
+    hyperlink: https://www.instagram.com/wlmac.dancecouncil/
+  - at: "youtube"
+    icon: youtube
+    hyperlink: https://www.youtube.com/c/WLMackenzieCIArtsDept/
 contact:
   - name: Alexandra Peters
     email: alexandra.peters@tdsb.on.ca
