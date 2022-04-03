@@ -10,10 +10,6 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-# For the phone filter plugin
-phone_ext_marker: "ext."
-phone_delimiter: "."
-
 nav_links:
   Events:
     Upcoming: /events/
