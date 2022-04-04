@@ -10,11 +10,11 @@ default_avatar: "/members/default.png"
 <div class="councils">
 	<div class="council_tab_buttons">
     {%- for council in site.data.members.councils -%}
-      <div class="title" type="button" onclick="{{ council.id }}()"><p>{{council.btn}}</p></div>
+      <div class="title" id="{{ council.id }}-btn" type="button" onclick="{{ council.id }}()"><p>{{council.btn}}</p></div>
     {%- endfor -%}			    
 	</div>
 	{%- for council in site.data.members.councils -%}
-	<div class="council_info_box" id="{{ council.id }}"> {% comment %} council id for javascripting the tabs {% endcomment %}
+	<div class="council_info_box" id="{{ council.id }}"> {% comment %} council id for javascript-ing the tabs {% endcomment %}
 		<h2 class="section-title">{{ council.name }}</h2>
 		<p class="councils__description">{{council.description}}</p>
 
@@ -36,19 +36,11 @@ default_avatar: "/members/default.png"
   		{%- endfor -%}			
     </div>
     <h3 class="council-members-title">Members:</h3>
-    {% assign calc1 = council.members.size | divided_by: 6 | plus: 1 %}
-    {%- for i in (1..calc1) -%}
-      <div class="council-member-row">
-        {%- for memberidx in (1..6) -%}
-          <p class="member-name">
-          {% assign calc2 = i | minus: 1 | times: 6 | plus: memberidx | minus: 1 %} 
-          {%- if council.members[calc2] != null -%}
-            {{council.members[calc2]}}
-          {%- endif -%}
-          </p>
-        {%- endfor -%}
-      </div>
-    {%- endfor -%}
+    <div class="council-member-row">
+      {%- for member in council.members -%}
+        <p class="member-name">{{member}}</p>
+      {%- endfor -%}
+    </div>
   </div>
 	{%- endfor -%}
 </div>
@@ -58,12 +50,15 @@ default_avatar: "/members/default.png"
       {%- for councilin in site.data.members.councils -%}
         {%- if councilin == council -%}
           document.getElementById("{{councilin.id}}").style.display = "block";
+          document.getElementById("{{councilin.id}}-btn").style.backgroundColor = "#EDEDED";      
         {%- else -%}
           document.getElementById("{{councilin.id}}").style.display = "none";    
+          document.getElementById("{{councilin.id}}-btn").style.backgroundColor = "#D9D9D9";      
         {%- endif -%}
       {%- endfor -%}			
     }
   {%- endfor -%}	
   window.document.onload = central();
 </script>
-{% comment %} TODO: fix the font sizes/spaces, fix img, add fixed size for info box?, button hover selected stuff, make it work on mobile [buttons, chair pic/bio, memberlist], use color var instead (excuse my spaghetti code) {% endcomment %}
+
+{% comment %} TODO: add fixed size for info box?, tab button hover?, make it work on mobile [button order?] (excuse my spaghetti code) {% endcomment %}

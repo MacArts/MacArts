@@ -6,12 +6,15 @@ councils:
     chairs:
     - name: Zoe Friedman
       position: Senior Chair
+      headshot: 
       description: insert very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very long bio here
     - name: Kailey Cheng
       position: Junior Chair
+      headshot: 
       description: insert ideal length ideal length ideal length ideal length ideal length ideal length ideal length ideal length ideal length ideal length ideal length ideal length ideal length ideal length bio here
     - name: Taihan Mobasshir
       position: Junior Chair
+      headshot: 
       description: insert bio here
     members:
     - Member Name 1
@@ -24,9 +27,11 @@ councils:
     chairs:
       - name: Hassan Khan
         position: Senior Chair
+        headshot: 
         description: insert bio here
       - name: Zoe Fan-Chiang
         position: Junior Chair
+        headshot: 
         description: insert bio here
     members:
     - Member Name 1
@@ -48,9 +53,11 @@ councils:
     chairs:
       - name: Morrie Yalowsky
         position: Senior Chair
+        headshot: 
         description: insert bio here
       - name: Isabella Prencipe
         position: Junior Chair
+        headshot: 
         description: insert bio here
     members:
     - Member Name 1
@@ -70,9 +77,11 @@ councils:
     chairs:
       - name: Skye Haik
         position: Co-Chair
+        headshot: /members/d-skye.jpeg
         description: insert bio here
       - name: Zeynep Kurtoglu
         position: Co-Chair
+        headshot: 
         description: insert bio here
     members:
     - Member Name 1
@@ -92,9 +101,11 @@ councils:
     chairs:
       - name: Amaya Ko
         position: Senior Chair
+        headshot: 
         description: insert bio here
       - name: Lily Phan
         position: Junior Chair
+        headshot: 
         description: insert bio here
     members:
     - Member Name 1
