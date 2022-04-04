@@ -2,6 +2,7 @@ staff:
   - name: Lisa Cohen
     council: Staff
     position: Staff and ACL of Arts
+    location: Arts Office (Across from Room 217), Music Office (Room 114)
     bio: "Lisa Cohen earned her Honours Bachelor of Music Education (with
       Distinction) from Western University in 2008, and her Masters in Teaching
       from OISE in 2011, with a thesis on equity and ethics in arts education.
@@ -15,6 +16,7 @@ staff:
   - name: Jennifer Scott Barnier
     council: Staff
     position: Staff
+    location: Music Office (Room 114)
     bio: Jennifer Scott Barnier earned her Bachelor of Music Education from the
       University of Toronto in 1999, and graduated from OISE/UT with a Bachelor
       of Education in 2000. She achieved her Honours Specialist in Music in
@@ -33,6 +35,7 @@ staff:
   - name: Alexandra Peters
     council: Staff
     position: Staff
+    location: Room 216
     bio: Alexandra Peters graduated from Queen's University with a Bachelor of
       Education and received a Bachelor of Fine Arts Degree with a Minor in
       Geography from the University of Ottawa. Her artwork has been displayed in
@@ -45,6 +48,7 @@ staff:
   - name: Colin Fallowfield
     council: Staff
     position: Staff
+    location: Room ???
     bio: "Colin Fallowfield earned his undergraduate degree from York University in
       2009, with a specialty in Devised Theatre. Before completing his Bachelor
       of Education at OISE in 2012, he co-founded a training-focused theatre
@@ -59,14 +63,17 @@ staff:
   - name: Alexandra Parravano
     council: Staff
     position: Staff
+    location: Art Office (Room 114)
     bio: "Ms. Parravano is a dance teacher at Mackenzie."
   - name: Ian Lawrence
     council: Staff
     position: Staff
+    location: Room 216
     bio: "Mr. Lawrence is a photography teacher at Mackenzie."
   - name: Maggie Archer
     council: Staff
     position: Staff
+    location: Room ???
     bio: "Ms. Archer is a visual arts teacher at Mackenzie."
 members:
   - name: Zoe Friedman
