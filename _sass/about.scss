@@ -1,3 +1,6 @@
+$light-gray: #EDEDED;
+$dark-gray: #D9D9D9;
+
 .councils {
   list-style: none;
   margin: 0;
@@ -13,45 +16,51 @@
     .title{
       margin-left: 0.5em;
       margin-bottom: 0.05em;
-      padding: 0.8em 0;
-      background-color: #EDEDED;
+      padding: 0.8em 0.6em;
+      background-color: $dark-gray;
       border: $charcoal solid 0.1em; 
       border-radius: 0.75em; 
-      width: 100%;
+      width: 100%;  
+      display:table;
       p {
-        font-weight: bold;
-        font-size: 1.5em;
+        font-family: $title-font;
+        font-size: 1.1em;
         color: $charcoal;
+        display: table-cell;
+        vertical-align: middle;
       }
     }
     .title:first-child{
       margin-left: 0;
     }
-    .title:hover{
-      background-color: #E3E3E3;
-    }
+    /*.title:hover{
+      background-color: $dark-gray;
+    }*/
   }
   .council_info_box{
-    background-color: #EDEDED;
+    background-color: $light-gray;
     border: $charcoal solid 0.1em;
-    border-radius: 1.25em;
+    border-radius: 0.75em;
     margin-bottom: 2em;
     padding: 2.5em 3.5em; 
     
     .council-chairs{
       display: flex;
       margin: 1em 0;
-      
       .council-chair {
     
-        &__name {
-          font-weight: bold;
-          font-size: 1.5em;
+        &__name { 
+          font-family: $title-font;      
+          font-size: 1.4em;
+          color: $charcoal;
           line-height: 1em;
           margin-bottom: 0.1em;
+          overflow-wrap: anywhere;
         }
         &__position {
+          color: $charcoal;
           font-size: 1.25em;
+          opacity: 75%;
         }    
         &__description {
           font-size: 1.1em;
@@ -61,23 +70,23 @@
       }
       .council-chair-box{
         flex: 1;
-        margin-left: 1.5em;        
-        /*border: 2px solid yellow;*/
+        margin-left: 1.75em;        
         .council-chair-info-container{
           display: flex;
           .council-chair-info{
             margin-left: 0.75em;
-            align-self: flex-end;            
+            align-self: flex-end;  
           }
           img.framed {
-            width: 10em;
-            height: 10em;
-              $shadow-size: 7px;
-              $border-size: 7px;
-              border: $border-size solid $charcoal;
-              box-shadow: -$shadow-size $shadow-size $blue;
-              margin-left: $shadow-size;
-              margin-bottom: $shadow-size;       
+            min-width: 8em;
+            height: 8em;
+            $shadow-size: 7px;
+            $border-size: 7px;
+            border: $border-size solid $charcoal;
+            box-shadow: -$shadow-size $shadow-size $blue;
+            margin-left: $shadow-size;
+            margin-bottom: $shadow-size;    
+            object-fit: cover;    
           }
         }
         .council-chair-info-container:first-child{
@@ -93,10 +102,12 @@
       font-size: 1.5em;
     }
     .council-member-row{
-      display: flex;
+      overflow: auto;
       .member-name{
-        width:100%;
         padding-bottom: 0.1em;
+        font-size: 1.1em;
+        width: 20%; 
+        float: left;
       }
     }
   }
@@ -106,4 +117,63 @@
   font-size: 2em;
   font-weight: bold;
   margin-bottom: 0.5rem; 
+}
+
+@media screen and (max-width: 900px){
+  /* stack name/pic/position on top of description */
+  .councils {
+    .council_info_box .council-chairs{
+        display: block;
+        .council-chair-box {
+          margin-bottom: 1.5em;
+          margin-left: 0;
+        }
+        .council-chair-info-container{
+          display: block;
+          flex: none;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1250px) and (min-width: 900px){
+  /* name/pic/position/description go side by side instead of on top of each other */
+  .councils {
+    .council_info_box .council-chairs{
+      display: block;
+      .council-chair-info-container{
+        flex:1;
+        margin-right: 1em;
+        img{
+          align-self: flex-end;  
+        }
+      }
+      .council-chair__description{
+        flex:1;
+        align-self: flex-end; 
+        overflow-y: auto;
+        max-height: 7em;
+      }
+      .council-chair-box {
+        margin-bottom: 1.5em;
+        margin-left: 0;
+        display: flex;
+      }
+    }
+
+    /* makes tab buttons go vertically adjacent to each other */
+    .council_tab_buttons{
+      display: block;
+      margin-bottom: 1em;
+      .title {
+        margin: 0.5em 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px){
+  /* three members per row rather than five */
+  .councils .council_info_box .council-member-row .member-name{
+        width: 33%;
+  }
 }
