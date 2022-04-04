@@ -133,6 +133,14 @@ $dark-gray: #D9D9D9;
           flex: none;
       }
     }
+    /* makes tab buttons go vertically adjacent to each other */
+    .council_tab_buttons{
+      display: block;
+      margin-bottom: 1em;
+      .title {
+        margin: 0.5em 0;
+      }
+    }
   }
 }
 @media screen and (max-width: 1250px) and (min-width: 900px){
@@ -157,15 +165,6 @@ $dark-gray: #D9D9D9;
         margin-bottom: 1.5em;
         margin-left: 0;
         display: flex;
-      }
-    }
-
-    /* makes tab buttons go vertically adjacent to each other */
-    .council_tab_buttons{
-      display: block;
-      margin-bottom: 1em;
-      .title {
-        margin: 0.5em 0;
       }
     }
   }
