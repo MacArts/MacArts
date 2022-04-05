@@ -2,7 +2,7 @@
 layout: info
 permalink: /staff/
 title: The Staff
-subheading: 2020-21
+subheading: 2021-22
 default_avatar: "/members/default.png"
 ---
 
@@ -20,6 +20,7 @@ default_avatar: "/members/default.png"
         <h2>{{ member.name }}</h2>
         <h3>{{ member.position }}</h3>
         <h4><i data-feather="map-pin"></i>{{ member.location }}</h4>
+        <h4><a href="mailto:{{ member.contact }}"><i data-feather="mail"></i>{{ member.contact }}</a></h4>
         <p>{{ member.bio }}</p>
       </div>
     </div>
