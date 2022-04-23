@@ -86,10 +86,27 @@
         max-height: 300px;
       }
 
+      &.tall {
+        min-width: unset;
+        max-width: 400px;
+        min-height: 600px;
+        max-height: 600px;
+      }
+      
+      &.col {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        min-width: unset;
+        max-width: 400px;
+        min-height: 300px;
+        max-height: 300px;
+        margin-left: 25px;
+      }
+
       img {
         width: 100%;
         object-fit: cover;
-        max-height: 350px;
       }
 
       @include mq($on-laptop) {

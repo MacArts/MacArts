@@ -15,26 +15,44 @@ layout: default
     </div>
 
     {%- assign dept = site.data.departments[page.tag] -%}
-
+    <div class="listing">
+      <div>
+        <div class="info">
+          <h2>About</h2>
+          <p>{{ dept.gallery.description }}</p>
+        </div>
+      </div>
+    </div>
     <div class="listing">
       {%- if dept.gallery.show == nil or dept.gallery.show -%}
       <div>
-        <div class="img-wrapper">
+        <div class="img-wrapper tall">
           <img
-            src="{{ dept.gallery.image | default: '/assets/img/logo.svg' }}"
+            src="{{ dept.gallery.image1 | default: '/assets/img/logo.svg' }}"
             alt="{{ dept.gallery.alt-text | default: '' }}"
             class="framed"
           />
         </div>
-        <div class="info">
-          <h2>{{ dept.name }} Showcase Gallery</h2>
-          <p>{{ dept.gallery.description }}</p>
-          <a
-            href="{{ '/gallery/' | append: page.tag | relative_url }}"
-            class="button-large"
-            >View Gallery</a
-          >
+        <div class="img-wrapper col">
+          <img
+            src="{{ dept.gallery.image2 | default: '/assets/img/logo.svg' }}"
+            alt="{{ dept.gallery.alt-text | default: '' }}"
+            class="framed"
+          />
+          <br/>
+          <img
+            src="{{ dept.gallery.image2 | default: '/assets/img/logo.svg' }}"
+            alt="{{ dept.gallery.alt-text | default: '' }}"
+            class="framed"
+          />
         </div>
+      </div>
+      <div class="info">
+        <a
+          href="{{ '/gallery/' | append: page.tag | relative_url }}"
+          class="button-large"
+          >View Gallery</a
+        >
       </div>
       {%- endif -%} 
       {%- if dept.classwork.show == nil or dept.classwork.show -%}
@@ -58,13 +76,13 @@ layout: default
       </div>
       {%- endif -%}
     </div>
-    <br />
+    <br>
     <div id="contact">
-      <h2 class="h1">Contact</h2>
+      <h2>Contact</h2>
       <div class="contact__list">
         {%- for contact in dept.contact -%}
         <div>
-          <h3 class="h2">{{ contact.name }}</h3>
+          <h3 class="contact-name">{{ contact.name }}</h3>
           <p>
             <i data-feather="mail"></i>
             <a href="mailto:{{ contact.email }}">{{ contact.email }}</a>
@@ -73,6 +91,20 @@ layout: default
         </div>
         {%- endfor -%}
       </div>
+    </div>
+    <br>
+    <div id="courses">
+      <h2 class="h1">Courses</h2>
+      <img
+        src="{{ dept.course.img | default: '/assets/img/logo.svg' }}"
+        alt="{{ dept.course.alt-text | default: '' }}"
+        class="framed"
+      />
+    </div>
+    <br>
+    <div id="ensembles">
+      <h2 class="h1">Extra Curricular & Ensembles</h2>
+      
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>

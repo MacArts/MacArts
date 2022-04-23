@@ -12,7 +12,8 @@ gallery:
     music and come together. 
 
     Instagram: wlmac_music
-  image: /assets/img/music/Copy of IMG_8918.JPG
+  image1: /assets/img/music/Copy of IMG_8945.JPG
+  image2: /assets/img/music/Copy of IMG_8918.JPG
   alt-text: Music Council
 classwork:
   show: false
