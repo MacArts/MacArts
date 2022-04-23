@@ -15,11 +15,7 @@ gallery:
   image1: /assets/img/music/Copy of IMG_8945.JPG
   image2: /assets/img/music/Copy of IMG_8918.JPG
   alt-text: Music Council
-classwork:
-  show: false
-  description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-  image: /assets/img/music/m2.png
-  alt-text: some alt text for the image
+
 socials:
   - at: "instagram"
     icon: instagram
