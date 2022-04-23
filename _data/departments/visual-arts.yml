@@ -13,12 +13,6 @@ gallery:
     Instagram: wlmac.visualartscouncil
   image: /assets/img/visual-arts/Cristelle Valdevieso, Pink Mushrooms, Monochromatic Painting.jpeg
   alt-text: Visual and Digital Arts Council
-<<<<<<< HEAD
-classwork:
-  show: false
-  description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-  alt-text: art
-  image: /music/m4.png
 socials:
   - at: "instagram"
     icon: instagram
@@ -26,9 +20,7 @@ socials:
   - at: "linktree"
     icon: link-2
     hyperlink: https://www.linktr.ee/visualartscouncil/
-=======
 
->>>>>>> remove-old
 contact:
   - name: Lisa Cohen
     email: lisa.abrams@tdsb.on.ca

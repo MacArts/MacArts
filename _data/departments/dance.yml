@@ -18,12 +18,6 @@ gallery:
     Instagram: wlmac.dancecouncil
   image: /assets/img/dance/IMG_10390.JPG
   alt-text: Dance Council
-<<<<<<< HEAD
-classwork:
-  show: false
-  description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-  image: /music/m4.png
-  alt-text: dance
 socials:
   - at: "instagram"
     icon: instagram
@@ -31,9 +25,7 @@ socials:
   - at: "youtube"
     icon: youtube
     hyperlink: https://www.youtube.com/c/WLMackenzieCIArtsDept/
-=======
 
->>>>>>> remove-old
 contact:
   - name: Alexandra Peters
     email: alexandra.peters@tdsb.on.ca

@@ -14,12 +14,6 @@ gallery:
     join us to put on plays and find your theatre family!
   alt-text: Drama Council
   image: /assets/img/drama/IMG_6411.JPG
-<<<<<<< HEAD
-classwork:
-  show: false
-  description: lorem ipsum
-  image: /music/m4.png
-  alt-text: drama
 socials:
   - at: "instagram"
     icon: instagram
@@ -30,9 +24,7 @@ socials:
   - at: "linktree"
     icon: link-2
     hyperlink: https://www.linktr.ee/wlmac.drama/
-=======
 
->>>>>>> remove-old
 contact:
   - name: Colin Fallowfield
     email: colin.fallowfield@tdsb.on.ca
