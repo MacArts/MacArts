@@ -15,20 +15,35 @@ phone_ext_marker: "ext."
 phone_delimiter: "."
 
 nav_links:
-  Events: /events/
-  Calendar: /calendar/
-  Announcements:
-    Music: /announcements/music/
-    Drama: /announcements/drama/
-    Dance: /announcements/dance/
-    Visual & Digital Arts: /announcements/visual-arts/
-  About: /about/
-  Gallery: /gallery/
-  Departments:
-    Music: /departments/music/
-    Drama: /departments/drama/
-    Dance: /departments/dance/
-    Visual & Digital Arts: /departments/visual-arts/
+  - name: Events
+    url: /events/
+  - name: Calendar
+    url: /calendar/
+  - name: Announcements
+    url: /announcements/
+    children:
+    - name: Music
+      url: /announcements/music/
+    - name: Drama
+      url: /announcements/drama/
+    - name: Dance
+      url: /announcements/dance/
+    - name: Visual & Digital Arts
+      url: /announcements/visual-arts/
+  - name: About
+    url: /about/
+  - name: Gallery
+    url: /gallery/
+  - name: Departments
+    children:
+    - name: Music
+      url: /departments/music/
+    - name: Drama
+      url: /departments/drama/
+    - name: Dance
+      url: /departments/dance/
+    - name: Visual & Digital Arts
+      url: /departments/visual-arts/
 
 collections:
   announcements:
