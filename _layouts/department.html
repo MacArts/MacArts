@@ -55,26 +55,6 @@ layout: default
         >
       </div>
       {%- endif -%} 
-      {%- if dept.classwork.show == nil or dept.classwork.show -%}
-      <div>
-        <div class="img-wrapper">
-          <img
-            src="{{ dept.classwork.image | default: '/assets/img/logo.svg' }}"
-            alt="{{ dep.classwork.alt-text | default: '' }}"
-            class="framed"
-          />
-        </div>
-        <div class="info">
-          <h2>Classwork Showcase</h2>
-          <p>{{ dept.classwork.description }}</p>
-          <a
-            href="{{ '/classwork/' | append: page.tag | relative_url }}"
-            class="button-large"
-            >View Classwork</a
-          >
-        </div>
-      </div>
-      {%- endif -%}
     </div>
     <br>
     <div id="contact">

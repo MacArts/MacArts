@@ -84,22 +84,6 @@ collections:
             field: { label: "Video URL", name: 'url', widget: 'string' }
           }
           - {
-            label: 'Classwork',
-            name: 'classwork',
-            widget: 'image',
-            media_folder: '{{media_folder}}/classwork/dance',
-            required: false
-          }
-          - {
-            label: 'Classwork Videos',
-            label_singular: 'Video',
-            name: 'classwork-videos',
-            required: false,
-            widget: 'list',
-            summary: '{{fields.url}}',
-            field: { label: "Video URL", name: 'url', widget: 'string' }
-          }
-          - {
             label: 'Thumbnail',
             name: 'thumbnail',
             required: false,
@@ -124,22 +108,6 @@ collections:
             label: 'Gallery Videos',
             label_singular: 'Video',
             name: 'gallery-videos',
-            required: false,
-            widget: 'list',
-            summary: '{{fields.url}}',
-            field: { label: "Video URL", name: 'url', widget: 'string' }
-          }
-          - {
-            label: 'Classwork',
-            name: 'classwork',
-            widget: 'image',
-            media_folder: '{{media_folder}}/classwork/music',
-            required: false
-          }
-          - {
-            label: 'Classwork Videos',
-            label_singular: 'Video',
-            name: 'classwork-videos',
             required: false,
             widget: 'list',
             summary: '{{fields.url}}',
@@ -176,22 +144,6 @@ collections:
             field: { label: "Video URL", name: 'url', widget: 'string' }
           }
           - {
-            label: 'Classwork',
-            name: 'classwork',
-            widget: 'image',
-            media_folder: '{{media_folder}}/classwork/drama',
-            required: false
-          }
-          - {
-            label: 'Classwork Videos',
-            label_singular: 'Video',
-            name: 'classwork-videos',
-            required: false,
-            widget: 'list',
-            summary: '{{fields.url}}',
-            field: { label: "Video URL", name: 'url', widget: 'string' }
-          }
-          - {
             label: 'Thumbnail',
             name: 'thumbnail',
             required: false,
@@ -216,22 +168,6 @@ collections:
             label: 'Gallery Videos',
             label_singular: 'Video',
             name: 'gallery-videos',
-            required: false,
-            widget: 'list',
-            summary: '{{fields.url}}',
-            field: { label: "Video URL", name: 'url', widget: 'string' }
-          }
-          - {
-            label: 'Classwork',
-            name: 'classwork',
-            widget: 'image',
-            media_folder: '{{media_folder}}/classwork/visual-arts',
-            required: false
-          }
-          - {
-            label: 'Classwork Videos',
-            label_singular: 'Video',
-            name: 'classwork-videos',
             required: false,
             widget: 'list',
             summary: '{{fields.url}}',
@@ -314,13 +250,6 @@ collections:
               - { label: 'Description', name: 'description', widget: 'text' }
               - { label: 'Image', name: 'image', widget: 'image', media_folder: '{{media_folder}}/music' }
               - { label: 'Alt Text', name: 'alt-text', widget: 'string' }
-          - label: 'Classwork'
-            name: 'classwork'
-            widget: 'object'
-            fields:
-              - { label: 'Description', name: 'description', widget: 'text' }
-              - { label: 'Image', name: 'image', widget: 'image', media_folder: '{{media_folder}}/music' }
-              - { label: 'Alt Text', name: 'alt-text', widget: 'string' }
           - label: 'Contact'
             name: 'contact'
             widget: 'list'
@@ -340,13 +269,6 @@ collections:
             fields:
               - { label: 'Description', name: 'description', widget: 'text' }
               - { label: 'Image', name: 'image', widget: 'image', media_folder: '{{media_folder}}/visual-arts' }
-              - { label: 'Alt Text', name: 'alt-text', widget: 'string' }
-          - label: 'Classwork'
-            name: 'classwork'
-            widget: 'object'
-            fields:
-              - { label: 'Description', name: 'description', widget: 'text' }
-              - { label: 'Image', name: 'image', widget: 'image', media_folder: '{{media_folder}}/music' }
               - { label: 'Alt Text', name: 'alt-text', widget: 'string' }
           - label: 'Contact'
             name: 'contact'
@@ -368,13 +290,6 @@ collections:
               - { label: 'Description', name: 'description', widget: 'text' }
               - { label: 'Image', name: 'image', widget: 'image', media_folder: '{{media_folder}}/dance' }
               - { label: 'Alt Text', name: 'alt-text', widget: 'string' }
-          - label: 'Classwork'
-            name: 'classwork'
-            widget: 'object'
-            fields:
-              - { label: 'Description', name: 'description', widget: 'text' }
-              - { label: 'Image', name: 'image', widget: 'image', media_folder: '{{media_folder}}/music' }
-              - { label: 'Alt Text', name: 'alt-text', widget: 'string' }
           - label: 'Contact'
             name: 'contact'
             widget: 'list'
@@ -394,13 +309,6 @@ collections:
             fields:
               - { label: 'Description', name: 'description', widget: 'text' }
               - { label: 'Image', name: 'image', widget: 'image', media_folder: '{{media_folder}}/drama' }
-              - { label: 'Alt Text', name: 'alt-text', widget: 'string' }
-          - label: 'Classwork'
-            name: 'classwork'
-            widget: 'object'
-            fields:
-              - { label: 'Description', name: 'description', widget: 'text' }
-              - { label: 'Image', name: 'image', widget: 'image', media_folder: '{{media_folder}}/music' }
               - { label: 'Alt Text', name: 'alt-text', widget: 'string' }
           - label: 'Contact'
             name: 'contact'
