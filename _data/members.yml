@@ -34,18 +34,15 @@ councils:
         headshot: 
         description: insert bio here
     members:
-    - Member Name 1
-    - Member Name 2
-    - Member Name 3
-    - Member Name 4
-    - Member Name 5
-    - Member Name 6
-    - Member Name 7
-    - Member Name 8
-    - Member Name 9
-    - Member Name 10
-    - Member Name 11
-    - Member Name 12
+    - Nicole Bodrenok
+    - Leina Shabaan
+    - David Shim
+    - Ashley Kay
+    - Ivy Fan-Chiang
+    - Chelsy Bollegala
+    - Erin Eldridge
+    - Celeste Luo
+    - Aaron Zhu
   - name: Drama
     id: drama
     btn: Drama
