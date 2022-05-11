@@ -25,13 +25,13 @@ default_avatar: "/members/default.png"
             {%- capture headshot -%}
               {{ chair.headshot | default: page.default_avatar }}
             {%- endcapture -%}
-            <img src="{{ "/assets/img" | append: headshot | relative_url }}" alt="{{ chair.name }}" class="framed">
-            <div class="council-chair-info">
-      				<p class="council-chair__name">{{chair.name}}</p>
-      				<p class="council-chair__position">{{chair.position}}</p>
+            <img src="{{ "/assets/img" | append: headshot | relative_url }}" alt="{{ chair.name }}" class="framed" style="display:none">
+            <div class="council-chair-info" style="margin-left:0"> 
+      				<p class="council-chair__position">{{chair.position}}</p>              
+      				<p class="council-chair__name" style="margin-top: 0.1em; margin-bottom: 0.5em;">{{chair.name}}</p>
             </div>
           </div>
-  				<p class="council-chair__description">{{chair.description}}</p>
+  				<p class="council-chair__description" style="display:none">{{chair.description}}</p>
   			</div>
   		{%- endfor -%}			
     </div>
