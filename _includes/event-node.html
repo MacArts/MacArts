@@ -4,7 +4,9 @@
         <img src="{{ event.image }}" alt="" class="framed" loading="lazy">
 	</div>
 	<div class="event__info">
-		<span class="event__date">{{ event.date | date_to_string }}</span>
+		{% if include.show_date %}
+			<span class="event__date">{{ event.date | date_to_string }}</span>
+		{%- endif %}
 		{% if include.url -%}
 			{%- assign h = "h3" -%}
 		{%- else -%}

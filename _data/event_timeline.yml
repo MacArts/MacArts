@@ -8,3 +8,4 @@
   expr: "evt.date >= one_month"
 - name: Past Events
   expr: "evt.date < today"
+  past: true
