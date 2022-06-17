@@ -9,7 +9,6 @@ layout: default
 </div>
 
 {%- if page.video -%}
-	<h2>Recording</h2>
 	{%- capture yt_embed -%}
 		{{- page.video | replace: "watch?v=", "embed/" -}}
 	{%- endcapture -%}
