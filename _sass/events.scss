@@ -147,3 +147,19 @@ $underline-colour: rgba(lighten($charcoal, 62%), 0.7);
     margin: 0;
   }
 }
+.grid-group__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem 2.5rem;
+  margin: 2rem 0;
+
+  @include mq($on-tablet) {
+    grid-template-columns: 1fr;
+  }
+
+  > * {
+    max-width: #{"min(500px, 100%)"};
+    max-height: 350px;
+    place-self: center;
+  }
+}

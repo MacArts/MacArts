@@ -1,7 +1,7 @@
 ---
 title: Much Ado About Zoom Class
 image: /assets/img/much-ado.jpg
-video: https://www.youtube.com/watch?v=vT1cKLbOaYQ
+video: ["https://www.youtube.com/watch?v=vT1cKLbOaYQ", "https://www.youtube.com/watch?v=vT1cKLbOaYQ", "https://www.youtube.com/watch?v=vT1cKLbOaYQ"]
 tags: ["drama"]
 excerpt_separator: <!--more-->
 ---

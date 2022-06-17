@@ -1,7 +1,7 @@
 ---
 title: Drama Night
 tags: [drama]
-video: https://www.youtube.com/watch?v=JvdMb9CyWWY
+video: ["https://www.youtube.com/watch?v=JvdMb9CyWWY"]
 image: /assets/img/drama-night.jpg
 ---
 
