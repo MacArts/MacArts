@@ -25,7 +25,7 @@ title: Events
 {% endcomment %}
 
 {% for filter in site.data.event_timeline %}
-  {%- assign filtered_events = site.events | where_exp: "evt", filter.expr  -%}
+  {%- assign filtered_events = site.events | where_exp: "evt", filter.expr -%}
   {% if filtered_events.size > 0 %}
     <div class="list-group">
       <h2 class="list-group__heading" id="{{ filter.name | slugify }}">{{ filter.name }}</h2>
