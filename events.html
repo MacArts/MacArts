@@ -10,7 +10,7 @@ title: Events
 {% assign two_weeks = '' | start_of_week_as_epoch | plus: 1209600 | epoch_to_time %}
 {% assign one_month = '' | start_of_next_month  %}
 
-<br>
+<!-- <br> -->
 
 {% comment %} todo: remove hardcoding {% endcomment %}
 {% comment %} 
@@ -28,7 +28,7 @@ title: Events
   {%- assign filtered_events = site.events | where_exp: "evt", filter.expr | sort_natural: "title" -%}
   {% if filtered_events.size > 0 %}
     <div class="list-group">
-      <h2 class="list-group__heading" id="{{ filter.name | slugify }}">{{ filter.name }}</h2>
+      <!-- <h2 class="list-group__heading" id="{{ filter.name | slugify }}">{{ filter.name }}</h2> -->
       <div class="list-group__list">
         {%- for event in filtered_events -%}
           {%- if event.current -%}

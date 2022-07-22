@@ -18,9 +18,7 @@ phone_ext_marker: "ext."
 phone_delimiter: "."
 
 nav_links:
-  Events:
-    Upcoming: /events/
-    Past: "/events/#archive"
+  Events: /events/
   Calendar: /calendar/
   Announcements: /announcements/
   Councils: /about/
