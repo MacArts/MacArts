@@ -20,7 +20,7 @@ phone_delimiter: "."
 nav_links:
   Events:
     Upcoming: /events/
-    Past: "/events/#past-events"
+    Past: "/events/#archive"
   Calendar: /calendar/
   Announcements: /announcements/
   Councils: /about/
@@ -36,7 +36,7 @@ collections:
     permalink: /departments/:name/
   events:
     output: true
-    permalink: /events/:year/:month/:slug/
+    permalink: /events/:slug/
 
 defaults:
   - scope:
@@ -53,6 +53,12 @@ defaults:
     values:
       layout: "event"
       image: "/assets/img/logo.svg"
+
+  # Prevent event thumbnails from appearing in galleries
+  - scope:
+      path: "assets/img/events/thumbnails"
+    values:
+      gallery_ignore: true
 
   # For display pages
   - scope:

@@ -31,10 +31,10 @@ title: Events
       <h2 class="list-group__heading" id="{{ filter.name | slugify }}">{{ filter.name }}</h2>
       <div class="list-group__list">
         {%- for event in filtered_events -%}
-          {%- if filter.past -%}
-            {%- include event-node.html content=event.excerpt button=true -%}
-          {%- else -%}
+          {%- if event.current -%}
             {%- include event-node.html content=event.content show_date=true -%}
+          {%- else -%}
+            {%- include event-node.html content=event.excerpt button=true -%}
           {%- endif -%}
         {%- endfor -%}
       </div>

@@ -1,5 +1,7 @@
 ---
 title: Arts in Bloom
+image: /assets/img/events/thumbnails/arts-in-bloom.png
+video: ["https://www.youtube.com/watch?v=JvdMb9CyWWY", "https://www.youtube.com/watch?v=24-oEOlwEvs"]
 tags: ["central arts"]
 ---
 
