@@ -1,8 +1,8 @@
 ---
 layout: info
 permalink: /about/
-title: About Us
-subheading: Meet Your Arts Council
+title: About
+subheading: About Arts Council
 default_avatar: "/members/default.png"
 ---
 <div class="year-switcher">
@@ -25,13 +25,24 @@ default_avatar: "/members/default.png"
             {%- capture headshot -%}
               {{ chair.headshot | default: page.default_avatar }}
             {%- endcapture -%}
+{% comment %} chair bios and pictures temporarily hidden
             <img src="{{ "/assets/img" | append: headshot | relative_url }}" alt="{{ chair.name }}" class="framed">
             <div class="council-chair-info">
       				<p class="council-chair__name">{{chair.name}}</p>
       				<p class="council-chair__position">{{chair.position}}</p>
             </div>
           </div>
-  				<p class="council-chair__description">{{chair.description}}</p>
+  				<p class="council-chair__description">{{chair.description}}</p> 
+{% endcomment %}
+{% comment %} chair bios and pictures temporarily hidden [start] {% endcomment %}
+            <img src="{{ "/assets/img" | append: headshot | relative_url }}" alt="{{ chair.name }}" class="framed" style="display:none">
+            <div class="council-chair-info" style="margin-left:0"> 
+      				<p class="council-chair__position">{{chair.position}}</p>              
+      				<p class="council-chair__name" style="margin-top: 0.1em; margin-bottom: 0.5em;">{{chair.name}}</p>
+            </div>
+          </div>
+  				<p class="council-chair__description" style="display:none">{{chair.description}}</p>
+{% comment %} chair bios and pictures temporarily hidden [end] {% endcomment %}
   			</div>
   		{%- endfor -%}			
     </div>
