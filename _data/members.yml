@@ -120,3 +120,57 @@ councils:
     - Member Name 10
     - Member Name 11
     - Member Name 12
+staff:
+  - name: Lisa Cohen
+    council: Staff
+    position: Staff and ACL of Arts
+    location: Arts Office (Across from Room 217), Music Office (Room 114)
+    contact: lisa.abrams@tdsb.on.ca
+    bio: "Lisa Cohen earned her Honours Bachelor of Music Education (with
+      Distinction) from Western University in 2008, and her Masters in Teaching
+      from OISE in 2011, with a thesis on equity and ethics in arts education.
+      She has enjoyed performing on the flute with Wind Ensembles and
+      singing/conducting choirs both locally and internationally, and now loves
+      sharing her passion for the arts with students at Mackenzie! Ms. Cohen
+      strongly believes in the arts as a powerful vehicle for the simultaneous
+      pursuit of excellence, improved cognition, and the promotion of well
+      being. "
+    headshot: /members/ms.-cohen.jpg
+  - name: Jennifer Scott Barnier
+    council: Staff
+    position: Staff
+    location: Music Office (Room 114)
+    contact: jennifer.scottbarnier@tdsb.on.ca
+    bio: Jennifer Scott Barnier earned her Bachelor of Music Education from the
+      University of Toronto in 1999, and graduated from OISE/UT with a Bachelor
+      of Education in 2000. She achieved her Honours Specialist in Music in
+      2002. She has taught Music, Drama and Visual Arts at Mackenzie since 2001.
+      As director of the Mackenzie Wind Ensemble/Concert Band and Junior Bands,
+      she has taken groups to the Ontario Band Association Festival many times,
+      and had the honour of conducting the TDSB West Combined Band on stage at
+      Roy Thomson Hall at the 2019 Sounds of Toronto Concert. She has been Music
+      Director for many of Mackenzie’s Musical Theatre productions over the
+      years, and has worked with Mackenzie Drama students to prepare for the
+      National Theatre School Festival. She is a passionate advocate for Arts
+      education, and works collaboratively with the Arts staff and Arts Council
+      to provide opportunities for all Mackenzie students to engage in creative
+      performing and visual arts initiatives.
+    headshot: /members/msscottbarnier.jpg
+  - name: Alexandra Parravano
+    council: Staff
+    position: Staff
+    location: Art Office (Room 114)
+    contact: alexandra.parravano@tdsb.on.ca
+    bio: "Ms. Parravano is a dance teacher at Mackenzie."
+  - name: Ian Lawrence
+    council: Staff
+    position: Staff
+    location: Room 216
+    contact: ian.lawrence@tdsb.on.ca
+    bio: "Mr. Lawrence is a photography teacher at Mackenzie."
+  - name: Maggie Archer
+    council: Staff
+    position: Staff
+    location: Room ???
+    contact: maggie.archer@tdsb.on.ca
+    bio: "Ms. Archer is a visual arts teacher at Mackenzie."
