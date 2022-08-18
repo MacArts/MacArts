@@ -3,16 +3,12 @@ description: >-
   WLMAC Arts Council events and information.
 baseurl: "" # TODO: Remove when migrating to domain
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-copyright: "&copy; 2020 Mackenzie Arts Council."
+# copyright: "&copy; 2020 Mackenzie Arts Council."
 
 # Build settings
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-
-# For the phone filter plugin
-phone_ext_marker: "ext."
-phone_delimiter: "."
 
 nav_links:
   Events:
