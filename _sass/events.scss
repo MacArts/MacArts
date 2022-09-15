@@ -108,7 +108,7 @@ $underline-colour: rgba(lighten($charcoal, 62%), 0.7);
 
   &__heading {
     font-size: 1.7rem;
-    color: $blue2;
+    color: $mid-blue;
     font-weight: 400;
     font-family: "Lemon Milk", sans-serif;
     @extend %underline;
