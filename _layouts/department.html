@@ -16,48 +16,6 @@ layout: default
 
     {%- assign dept = site.data.departments[page.tag] -%}
 
-    <div class="listing">
-      {%- if dept.gallery.show == nil or dept.gallery.show -%}
-      <div>
-        <div class="img-wrapper">
-          <img
-            src="{{ dept.gallery.image | default: '/assets/img/logo.svg' }}"
-            alt="{{ dept.gallery.alt-text | default: '' }}"
-            class="framed"
-          />
-        </div>
-        <div class="info">
-          <h2>{{ dept.name }} Showcase Gallery</h2>
-          <p>{{ dept.gallery.description }}</p>
-          <a
-            href="{{ '/gallery/' | append: page.tag | relative_url }}"
-            class="button-large"
-            >View Gallery</a
-          >
-        </div>
-      </div>
-      {%- endif -%} 
-      {%- if dept.classwork.show == nil or dept.classwork.show -%}
-      <div>
-        <div class="img-wrapper">
-          <img
-            src="{{ dept.classwork.image | default: '/assets/img/logo.svg' }}"
-            alt="{{ dep.classwork.alt-text | default: '' }}"
-            class="framed"
-          />
-        </div>
-        <div class="info">
-          <h2>Classwork Showcase</h2>
-          <p>{{ dept.classwork.description }}</p>
-          <a
-            href="{{ '/classwork/' | append: page.tag | relative_url }}"
-            class="button-large"
-            >View Classwork</a
-          >
-        </div>
-      </div>
-      {%- endif -%}
-    </div>
     <br />
     <div id="contact">
       <h2 class="h1">Contact</h2>
