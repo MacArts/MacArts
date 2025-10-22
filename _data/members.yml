@@ -6,15 +6,15 @@ councils:
     chairs:
     - name: Zoe Friedman
       position: Senior Chair
-      headshot: 
+      headshot:
       description: insert very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very long bio here
     - name: Kailey Cheng
       position: Junior Chair
-      headshot: 
+      headshot:
       description: insert ideal length ideal length ideal length ideal length ideal length ideal length ideal length ideal length ideal length ideal length ideal length ideal length ideal length ideal length bio here
     - name: Taihan Mobasshir
       position: Junior Chair
-      headshot: 
+      headshot:
       description: insert bio here
     members:
     - Member Name 1
@@ -25,14 +25,14 @@ councils:
     btn: Music
     description: Music Council is a group of students that represent the music department of Mackenzie. We help organize shows and help coordinate our ensembles and other initiatives. This year we ran virtual performances and rehearsals as well as mentorship programs for our junior students. We have many ensembles you can join. For beginner students we welcome you to the Junior Band and Choir and for our more experienced players you are welcome to the Wind Ensemble, Jazz Band, Choir and to our Klezmer Band by invitation. Let’s make music and come together.
     chairs:
-      - name: Hassan Khan
+      - name: Dominic Lam
         position: Senior Chair
-        headshot: 
+        headshot:
         description: insert bio here
-      - name: Zoe Fan-Chiang
-        position: Junior Chair
-        headshot: 
+        headshot:
         description: insert bio here
+    presidents:
+    - Testing
     members:
     - Nicole Bodrenok
     - Leina Shabaan
@@ -50,11 +50,11 @@ councils:
     chairs:
       - name: Morrie Yalowsky
         position: Senior Chair
-        headshot: 
+        headshot:
         description: insert bio here
       - name: Isabella Prencipe
         position: Junior Chair
-        headshot: 
+        headshot:
         description: insert bio here
     members:
     - Member Name 1
@@ -78,7 +78,7 @@ councils:
         description: insert bio here
       - name: Zeynep Kurtoglu
         position: Co-Chair
-        headshot: 
+        headshot:
         description: insert bio here
     members:
     - Member Name 1
@@ -98,11 +98,11 @@ councils:
     chairs:
       - name: Amaya Ko
         position: Senior Chair
-        headshot: 
+        headshot:
         description: insert bio here
       - name: Lily Phan
         position: Junior Chair
-        headshot: 
+        headshot:
         description: insert bio here
     members:
     - Member Name 1
@@ -142,7 +142,7 @@ staff:
       University of Toronto in 1999, and graduated from OISE/UT with a Bachelor
       of Education in 2000. She achieved her Honours Specialist in Music in
       2002. She has taught Music, Drama and Visual Arts at Mackenzie since 2001.
-      As director of the Mackenzie Wind Ensemble/Concert Band and Junior Bands,
+      As director of the Mackenzie Wind Ensemble/Wind Symphony and Junior Bands,
       she has taken groups to the Ontario Band Association Festival many times,
       and had the honour of conducting the TDSB West Combined Band on stage at
       Roy Thomson Hall at the 2019 Sounds of Toronto Concert. She has been Music
@@ -171,4 +171,5 @@ staff:
     location: Room ???
     contact: maggie.archer@tdsb.on.ca
     bio: "Ms. Archer is a visual arts teacher at Mackenzie."
+
 
